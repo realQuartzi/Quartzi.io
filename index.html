@@ -1,0 +1,68 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="icon" href="assets/icon.png" sizes="32x32">
+    <title> Intellegent Data Computation  </title>
+
+
+    <script src="jquery.js"></script>
+    <script>
+        $(function() {
+            $('[id$="-include"]').each(function (e) {
+                $(this).load("snippets\\" + $(this).attr("id").replace("-include", "" ) + ".html");
+            });
+        }); 
+    
+    </script>
+
+
+    </head>
+<body>
+    <div class="title">
+        <a>
+            <img src="assets/icon.png" width="128" height="128">
+        </a>
+        <p>Welcome to my realm</p>
+    </div>
+
+    <div id="topnav-include"></div>
+
+    <div class="content">
+        <div class="card">
+            <h2>Hello, my name is Quartzi!</h2>
+            <h3>I am the creator and lead developer of the MMORPG Aukedora and I create Unity Editor tools and other software for fun.</h3>
+            </div>
+        <div class="leftContent">
+            <div class="card">
+
+                <div id="twitch-embed"></div>
+                <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+                <script type="text/javascript">
+                    new Twitch.Embed("twitch-embed", {
+                        width: "100%",
+                        height: "100%",
+                        channel: "quartzi",
+                        layout: "video",
+                        autoplay: "true",
+                        muted: "true"
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="rightContent">
+
+            <div class="card">
+
+                <div id="youtubeEmbed">
+
+                    <iframe width="100%" height="50%" src="https://www.youtube.com/embed/fR7RB2JzpvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+
+            </div>
+        </div>
+    </div>
+    
+        <div id="footer-include"></div>
+
+    </body>
+</html>

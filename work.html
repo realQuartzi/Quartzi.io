@@ -1,0 +1,57 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="icon" href="assets/icon.png" sizes="32x32">
+    <title> Intellegent Data Computation  </title>
+
+
+    <script src="jquery.js"></script>
+    <script>
+        $(function() {
+            $('[id$="-include"]').each(function (e) {
+                $(this).load("snippets\\" + $(this).attr("id").replace("-include", "" ) + ".html");
+            });
+        }); 
+    
+    </script>
+
+
+    </head>
+<body>
+    <div class="title">
+        <a>
+            <img src="assets/icon.png" width="128" height="128">
+        </a>
+        <p>Welcome to my work</p>
+    </div>
+
+    <div id="topnav-include"></div>
+
+    <div class="content">
+
+            <div class="leftContent">
+
+                <div class="card">
+
+                    <h2>Spores</h2>
+                    <img src="assets/icon.png" width="256" height="256">
+
+                </div>
+            </div>
+    
+    
+            <div class="rightContent">
+
+                <div class="card">
+
+                    <h2>Tilting Ship</h2>
+
+                </div>
+            </div>
+
+    </div>
+    
+        <div id="footer-include"></div>
+
+    </body>
+</html>

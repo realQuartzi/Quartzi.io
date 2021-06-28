@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand-Regular";
+    padding: 12px;
+    background-image: url("../assets/background.svg");
+    color: white;
+}
+
+.title{
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 64px;
+    padding: 0px;
+    color: white;
+}
+
+.title p {
+    font-family: "Quicksand-Light";
+    font-size: 32px;
+    color: white;
+}
+
+.topNavigation{
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+.topNavigation a {
+    font-family: "Quicksand-Regular";
+    font-size: 24px;
+    float: left;
+    color: White;
+    text-align: center;
+    padding: 8px 24px;
+    text-decoration: none;
+}
+
+.topNavigation a:hover{
+    background-color: white;
+    font-family: "Quicksand-Bold";
+    color: black;
+}
+
+.leftContent{
+    float: left;
+    width: 49.5%;
+    border-radius: 16px;
+    border: 2px solid white;
+    margin-top: 8px;
+    margin-right: .5%;
+}
+
+.rightContent{
+    float:left;
+    width: 49.5%;
+    border-radius: 16px;
+    border: 2px solid white;
+    margin-top: 8px;
+    margin-left: .5%;
+}
+
+.card {
+    border-radius: 12px;
+    border: 1px solid white;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    margin: 8px;
+}
+
+.card h2 {
+    font-family: "Quicksand-Bold";
+}
+
+.card h5 {
+    font-family: "Quicksand-Bold";
+}
+
+.card p {
+    font-family: "Quicksand-Regular";
+}
+
+.footer{
+    font-family: "Quicksand-Regular";
+    margin-top: 16px;
+}
+
+.footer a {
+    font-family: "Quicksand-Light";
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    margin-top: 24px;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+#twitch-embed{
+    width: 100%;
+    height: 50%;
+}
+
+@font-face{
+    font-family: "Quicksand-Light";
+    src: url("../assets/fonts/Quicksand-Light.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Quicksand-Regular";
+    src: url("../assets/fonts/Quicksand-Regular.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Quicksand-Bold";
+    src: url("../assets/fonts/Quicksand-Bold.ttf") format("truetype");
+}
