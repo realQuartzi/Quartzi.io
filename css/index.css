@@ -29,6 +29,7 @@ body {
     overflow: hidden;
     border-radius: 8px;
     border: 2px solid white;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .topNavigation a {
@@ -68,6 +69,7 @@ body {
 .card {
     border-radius: 12px;
     border: 1px solid white;
+    background-color: rgba(0, 0, 0, .5);
     display: block;
     text-align: center;
     padding: 12px;
@@ -86,8 +88,17 @@ body {
     font-family: "Quicksand-Regular";
 }
 
+.card a {
+    font-family: "Quicksand-Regular";
+    color: yellow;
+    text-align: center;
+    text-decoration: none;
+}
+
 .footer{
     font-family: "Quicksand-Regular";
+    position: fixed;
+    bottom: 4px;
     margin-top: 16px;
 }
 

@@ -1,0 +1,65 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="icon" href="assets/icon.png" sizes="32x32">
+    <title> Intellegent Data Computation  </title>
+
+
+    <script src="jquery.js"></script>
+    <script>
+        $(function() {
+            $('[id$="-include"]').each(function (e) {
+                $(this).load("snippets\\" + $(this).attr("id").replace("-include", "" ) + ".html");
+            });
+        }); 
+    
+    </script>
+
+
+    </head>
+<body>
+    <div class="title">
+        <a>
+            <img src="assets/icon.png" width="128" height="128">
+        </a>
+        <p>Welcome to my work</p>
+    </div>
+
+    <div id="topnav-include"></div>
+
+    <div class="content">
+        
+        <div class="content">
+
+            <div class="leftContent">
+
+                <div class="card">
+
+                    <h2>Quartzified Tools</h2>
+                    <p>Quartzified Tools is a collection of Unity Editor Tools that I develope during the development of Aukedora to make development easier and/or faster. Each tool has its own seperate uses, providing each tool with some aspect to make game development easier.</p>
+                    <p>All these tools are released for free on my Github page, and can easily be added to your Unity project by just downloading the latest release and importing the Unity Package into your project.</p>
+                    <a href="https://github.com/realQuartzi/Quartzified-Tools">[Quartzified Tools on Github]</a>
+                </div>
+
+            </div>
+    
+            <div class="rightContent">
+
+                <div class="card">
+
+                    <h2>Quartzified Utility Library</h2>
+                    <p>The Quartzified Utility Library (QUL) || [COOL] is a Open source library of various useful methods/ functions that can be used in Unity and some DLLs even for general use.</p>
+                    <p>QUL is completely free to be used and uses the GPL-3.0 license to ensure its open-source / free state.</p>
+                    <a href="https://github.com/realQuartzi/Quartzified">[Quartzified Utility Library]</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer-include"></div>
+
+    </body>
+</html>
