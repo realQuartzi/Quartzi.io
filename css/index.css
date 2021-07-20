@@ -95,6 +95,18 @@ body {
     text-decoration: none;
 }
 
+.hiddenImage 
+{
+    display: none;
+}
+
+.card h2.hoverImage:hover ~ .hiddenImage
+{
+    display: block;
+    position: absolute;
+    width: 10%;
+}
+
 .footer{
     font-family: "Quicksand-Regular";
     position: fixed;
