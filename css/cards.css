@@ -94,7 +94,7 @@
 .projectDescription {
 
     text-align: left;
-    width: 350px;
+    width: 340px;
 
     color: white;
     text-shadow: rgb(0, 0, 0) 1px 1px;
@@ -103,6 +103,31 @@
     line-height: 1;
     font-family: "Quicksand-Regular";
     margin: 10px;
+}
+
+.redirectLink {
+    text-align: left;
+    width: 280px;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 1px;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1;
+    font-family: "Quicksand-Regular";
+    margin: 10px;
+}
+
+.itchLink
+{
+        text-align: left;
+            width: 280px;
+            color: white;
+            text-shadow: rgb(0, 0, 0) 1px 1px;
+            font-size: 14px;
+            font-weight: 100;
+            line-height: 1;
+            font-family: "Quicksand-Regular";
+            margin: 10px;
 }
 
 .gitHubLink {
