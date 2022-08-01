@@ -1,9 +1,9 @@
 
 .contentGrid {
-    padding-top: 8px;
+    padding-top: 16px;
     display: grid;
     grid-column: 3;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
     column-gap: 16px;
     row-gap: 16px;
 }
@@ -15,7 +15,6 @@
     width: 360px;
     height: auto;
     display: grid;
-    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 5px 10px rgba(0, 0, 0, 0.3);
@@ -81,7 +80,7 @@
 .projectRole {
 
     text-align: left;
-    width: 280px;
+    width: 350px;
 
     color: white;
     text-shadow: rgb(0, 0, 0) 1px 1px;
@@ -95,8 +94,21 @@
 .projectDescription {
 
     text-align: left;
-    width: 280px;
+    width: 350px;
 
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 1px;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1;
+    font-family: "Quicksand-Regular";
+    margin: 10px;
+}
+
+.gitHubLink {
+    text-align: left;
+    width: 280px;
+    text-align:end;
     color: white;
     text-shadow: rgb(0, 0, 0) 1px 1px;
     font-size: 14px;
