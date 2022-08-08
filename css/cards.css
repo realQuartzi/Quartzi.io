@@ -42,6 +42,26 @@
     opacity: 1;
 }
 
+.postType {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.postFilter{
+    height: 38px;
+    float: right;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: "Quicksand-Bold";
+    border: 4px solid white;
+    background-color: black;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 6px;
+}
+
 .centeredBox {
     position: absolute;
     bottom: 0px;
