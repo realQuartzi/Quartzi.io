@@ -1,68 +1,73 @@
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="icon" href="assets/icon.png" sizes="32x32">
-    <title> Intellegent Data Computation  </title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quartzified Avenue</title>
 
+        <link rel="icon" href="assets/icon.png" sizes="32x32">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <script src="jquery.js"></script>
-    <script>
-        $(function() {
-            $('[id$="-include"]').each(function (e) {
-                $(this).load("snippets\\" + $(this).attr("id").replace("-include", "" ) + ".html");
-            });
-        }); 
-    
-    </script>
-
-
+        <script src="jquery.js"></script>
+        <script>
+            $(function() {
+                $('[id$="-include"]').each(function (e) {
+                    $(this).load("snippets\\" + $(this).attr("id").replace("-include", "" ) + ".html");
+                });
+            }); 
+        </script>
     </head>
-<body>
-    <div class="title">
-        <a>
-            <img src="assets/icon.png" width="128" height="128">
-        </a>
-        <p>Welcome to my realm</p>
-    </div>
+    <body>
+        <header class="header">
+            <a class="logo">Lua was here >.<</a>
 
-    <div id="topnav-include"></div>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+            <!-- <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a> -->
+            </nav>
 
-    <div class="content">
-        <div class="card">
-            <h2>Hello, my name is Quartzi!</h2>
-            <h3>I am the creator and lead developer of the MMORPG Aukedora and I create Unity Editor tools, games and other software for fun.</h3>
+            <div class="bx bx-heart" id="heartIcon"></div>
+        </header>
+
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello, I am</h3>
+                <h1>Quartzi</h1>
+                <p>A driven and determined individual who has developed their skills in game development and software engineering through
+                self-directed learning and a commitment to personal growth.</p>
+
+                <div class="social-media">
+                    <a href="https://www.twitch.tv/quartzi" target="_blank"><i class='bx bxl-twitch'></i></a>
+                    <a href="https://www.youtube.com/@quartzi" target="_blank"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://twitter.com/realQuartzi" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.tiktok.com/@realquartzi" target="_blank"><i class='bx bxl-tiktok'></i></i></a>
+                    <a href="https://discord.gg/HJ9GQ6r" target="_blank"><i class='bx bxl-discord-alt'></i></i></a>
+                </div>
+                            
+                <a href="https://www.aukedora.com" class="button">Aukedora</a>
             </div>
-        <div class="leftContent">
-            <div class="card">
 
-                <div id="twitch-embed"></div>
-                <script src="https://embed.twitch.tv/embed/v1.js"></script>
+            <div class="profession-container">
+                <div class="profession-box"></div>
 
-                <script type="text/javascript">
-                    new Twitch.Embed("twitch-embed", {
-                        width: "100%",
-                        height: "100%",
-                        channel: "quartzi",
-                        layout: "video",
-                        autoplay: "true",
-                        muted: "true"
-                    });
-                </script>
+                <div class="overlay">
+                    <div class="home-img">
+                        <img src="assets/Avatar_sitting.png" alt="Quartzi">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="rightContent">
 
-            <div class="card">
 
-                <div id="youtubeEmbed">
+        </section>
 
-                    <iframe width="100%" height="50%" src="https://www.youtube.com/embed/fR7RB2JzpvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+        <footer class="footer">
 
-            </div>
-        </div>
-    </div>
-    
-        <div id="footer-include"></div>
+        </footer>
 
+
+        <!-- <div class="avatar"></div> -->
+        <!-- <div id="footer-include"></div> -->
     </body>
 </html>
