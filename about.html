@@ -1,58 +1,54 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="icon" href="assets/icon.png" sizes="32x32">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Intellegent Data Computation  </title>
 
+    <link rel="icon" href="assets/icon.png" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <script src="jquery.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="js/jquery.js"></script>
     <script>
-        $(function() {
-            $('[id$="-include"]').each(function (e) {
-                $(this).load("snippets\\" + $(this).attr("id").replace("-include", "" ) + ".html");
+        $(function() 
+        {
+            $('[id$="-include"]').each(function (e) 
+            {
+                $(this).load("snippets\\" + $(this).attr("id").replace("-include", "") + ".html", function() 
+                {
+                    $(document).trigger('themeSwitcher:load');
+                });
             });
-        }); 
-    
+        })
     </script>
-
-
     </head>
 <body>
-    <div class="title">
-        <a>
-            <img src="assets/icon.png" width="128" height="128">
-        </a>
-        <p>Welcome to my realm</p>
-    </div>
-
-    <div id="topnav-include"></div>
-
-    <div class="content">
-
-        <div class="card">
-
-            <h2>About Me</h2>
-
-            <p>Hello, I am mainly known as <b>Quartzi</b>. ^^</p>
-            <p>I was first introduced to programming at the age of 5 as well as the MMORPG genre and since then I have a very great liking to MMORPGs as well as programming. 
-                Ever since I have been very intouch with video games and started learning to write in javascript. This gaming obsession lasted untill 2012 when I discovered the Unity game engine and have ever since used it. 
-                This experience with Unity for such a long time has made me very prominent with Javascript and C#. (Mainly C# ... they kinda stopped using JavaScript... it was a good choice)</p>
-
-            <p> Now to get the professionalism out of the way. Ever since using Unity I have been learning many more languages and these include: C#, JavaScript, Python, Java, HTML/CSS, LUA, TypeScript, PHP, C, C++ and Swift. That is quite a lot. But I ain't no expert!</p>
-
-            <p>I am a fast learner and a fun example of showcasing my ability to learn fast is that I learned how to read LUA syntax in less then 10 minutes so I could make World of Warcraft Addons. That on its own doesnt show experience, but its rather that the API available when Classic WoW got released was basically none existent and it was amazing when I was able to change: My own name, everyone elses name, their description and their guild tag, in less than 2 hours.</p>
-            <p>Another fun fact is, that I wrote minecraft plugins because none of the servers that I played on or found ever had systems I personally wanted... So I made an amazing RPG plugin where you would have to level your character and professions to be able to: Wear better gear, Craft Better Items, Break Specific blocks, etc. But then I also made a PvP plugin that added unique classes with a leveling system and custom item system. That was fun ^^</p>
-
-            <p>I am currently workign towards being able to make a fulltime living through Game Development and a social medium such as Twitch. So if you want to support me with my quest to stay above water! Go check out my twitch and games ^^</p>
-
-            <p>You can contact me through various platforms / sources. Please don't just spam. Thanks</p>
-            <a>Private Email: quartzi@quartzified.com</a>
+    <div id="topnav-include"> </div>
+    
+    <section class="about" id="about">
+        <div class="about-content">
+            <h1>About Me</h2>
+            <h3>Hey there! I'm Quartzi,</h3>
+    
+            <p>A seasoned game developer and software engineer with a passion for crafting immersive digital experiences. Over the years, I've honed my skills in game development and software engineering, specializing in languages like C#, Java and Lua.</p>
+            <br>
+            <p>My journey began at the age of 5 when I first dabbled in programming, and since then, I've been on a relentless pursuit of knowledge and mastery. While Unity has been my go-to game engine, my expertise extends to a diverse range of languages, including C#, JavaScript, Python, Java, HTML/CSS, LUA, TypeScript, PHP, C++.</p>
+            <br>
+            <p>I am not just a code enthusiast, I've left my mark in the gaming world with creations like World of Warcraft addons, Minecraft plugins and Terraria Mods and even making Discord Bots, as it is always fun to learn something new and adapt to new challenges.</p>
+            <br>
+            <p>But it's not just about personal projects—I'm also passionate about giving back to the community. I actively contribute to open-source development on GitHub, creating tools that empower fellow developers in their game and software development journeys. I believe in making the process easier for everyone, fostering collaboration and innovation within the community.</p>
+            <br>
+            <p>Currently, I'm on a mission to turn my passion into a full-time profession, aspiring to make waves in the game development industry and share my journey on platforms like Twitch. If you're as excited about this adventure as I am, check out my Twitch channel and explore the games I've crafted. Feel free to connect with me on various platforms!</p>
             <br>
             <a>Discord: Quartzi#0001</a>
             <br>
             <a>Twitch: Quartzi</a>
         </div>
-    </div>
+    </section>
+
 
     <div id="footer-include"></div>
 

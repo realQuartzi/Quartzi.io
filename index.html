@@ -5,36 +5,33 @@
         <title>Quartzified Avenue</title>
 
         <link rel="icon" href="assets/icon.png" sizes="32x32">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-        <script src="jquery.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/navbar.css">
+
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+
+        <script src="js/jquery.js"></script>
         <script>
             $(function() {
-                $('[id$="-include"]').each(function (e) {
-                    $(this).load("snippets\\" + $(this).attr("id").replace("-include", "" ) + ".html");
+                $('[id$="-include"]').each(function (e) 
+                {
+                    $(this).load("snippets\\" + $(this).attr("id").replace("-include", "") + ".html", function() 
+                    {
+                        $(document).trigger('themeSwitcher:load');
+                    });
                 });
-            }); 
+            })
         </script>
     </head>
     <body>
-        <header class="header">
-            <a class="logo">Lua was here >.<</a>
-
-            <nav class="navbar">
-                <a href="#home" class="active">Home</a>
-            <!-- <a href="#about">About</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a> -->
-            </nav>
-
-            <div class="bx bx-heart" id="heartIcon"></div>
-        </header>
-
+        <div id="topnav-include"></div>
+        
         <section class="home" id="home">
             <div class="home-content">
                 <h3>Hello, I am</h3>
-                <h1>Quartzi</h1>
+                <h1>Quartzi</h1>    
                 <p>A driven and determined individual who has developed their skills in game development and software engineering through
                 self-directed learning and a commitment to personal growth.</p>
 
@@ -45,7 +42,11 @@
                     <a href="https://www.tiktok.com/@realquartzi" target="_blank"><i class='bx bxl-tiktok'></i></i></a>
                     <a href="https://discord.gg/HJ9GQ6r" target="_blank"><i class='bx bxl-discord-alt'></i></i></a>
                 </div>
-                            
+                <div class="project-media">
+                    <a href="https://www.quartzified.com"><i class='bx bx-joystick'></i></i></a>
+                    <a href="https://github.com/realQuartzi"><i class='bx bxl-github' ></i></i></a>
+                </div>
+
                 <a href="https://www.aukedora.com" class="button">Aukedora</a>
             </div>
 
@@ -54,7 +55,7 @@
 
                 <div class="overlay">
                     <div class="home-img">
-                        <img src="assets/Avatar_sitting.png" alt="Quartzi">
+                        <img src="assets/Avatar_smile.png" alt="Quartzi">
                     </div>
                 </div>
             </div>
