@@ -1,0 +1,178 @@
+/* Content */
+.content-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.content-card 
+{
+    background-color: var(--card-light);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .content-card 
+{
+    background-color: var(--card-dark);
+}
+
+.content-card a
+{
+    font-family: 'Fredoka One';
+    font-size: 24;
+    font-weight: 100;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.content-card a:hover 
+{
+    color: #3b82f6;
+}
+
+/* Search box */
+.search-box 
+{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid var(--card-light);
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+
+    text-align: center;
+
+    color: var(--text-light);
+    background-color: var(--card-light);
+}
+
+.dark-mode .search-box 
+{
+    color: var(--text-dark);
+    background-color: var(--card-dark);
+    border: 1px solid var(--card-dark);
+}
+
+.search-box:focus 
+{
+    border-color: #007bff;
+}
+
+.search-box::placeholder 
+{
+    color: var(--text-light);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.dark-mode .search-box::placeholder 
+{
+    color: var(--text-dark);
+}
+
+.center-card
+{
+    background-color: var(--card-light);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+.dark-mode .center-card 
+{
+    background-color: var(--card-dark);
+}
+
+.center-card p
+{
+    margin: 4px;
+}
+
+.code-block 
+{
+    background: var(--bg-light);
+    color: var(--text-light);
+    padding: 12px;
+    border-radius: 6px;
+    font-family: "Courier New", monospace;
+    overflow-x: auto;
+}
+
+.dark-mode .code-block 
+{
+    background: var(--bg-dark);
+    color: var(--text-dark);
+    padding: 12px;
+    border-radius: 6px;
+    font-family: "Courier New", monospace;
+    overflow-x: auto;
+}
+
+/* Tables */
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    color: var(--text-light)
+}
+
+.dark-mode table 
+{
+    color: var(--text-dark)
+}
+
+th, td 
+{
+    padding: 10px;
+    border: 1px solid var(--bg-dark);
+}
+
+.dark-mode th, td 
+{
+    border: 1px solid var(--bg-light);
+}
+
+th 
+{
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.dark-mode th 
+{
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+tr:nth-child(even) 
+{
+    background-color: var(--bg-light); /* Alternative Rows */
+}
+
+.dark-mode tr:nth-child(even) 
+{
+    background-color: var(--bg-dark); /* Alternative Rows */
+}
+
+@media (max-width: 820px)
+{
+    .content-grid
+    {
+        grid-template-columns: 1fr;
+    }
+}

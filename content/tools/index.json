@@ -1,0 +1,58 @@
+[
+    {
+        "file": "",
+        "title": "Unity Quirks Utility Library",
+        "description": "A C# Util-Lib extension tailored for Unity projects.",
+        "category": "Unity C# Utility Quirks",
+        "date": "Nov 2023",
+        "url": "https://github.com/Unity-Quirks/Util-Lib"
+    },
+    {
+        "file": "",
+        "title": "Clockwork Audio",
+        "description": "Seamless and efficient audio management for your games and applications.",
+        "category": "Unity C# Audio Quirks",
+        "date": "Nov 2023",
+        "url": "https://github.com/Unity-Quirks/Clockwork-Audio"
+    },
+    {
+        "file": "",
+        "title": "Clockwork UI",
+        "description": "A comprehensive UI package for Unity that enhances standard UI elements such as sliders, toggles, and buttons.",
+        "category": "Unity C# UI Quirks",
+        "date": "Apr 2024",
+        "url": "https://github.com/Unity-Quirks/Clockwork-UI"
+    },
+    {
+        "file": "",
+        "title": "QStore",
+        "description": "Make storing simple data, quicker and easier.",
+        "category": "Unity C# Data Quirks",
+        "date": "Coming 2025",
+        "url": ""
+    },
+    {
+        "file": "",
+        "title": ".NET Quirks Utility Library",
+        "description": "A C# toolbox for streamlined math operations, trig functions, interpolation, and handy data type extensions.",
+        "category": ".NET C# Utility Quirks",
+        "date": "Nov 2023",
+        "url": "https://github.com/dotNet-Quirks/Util-Lib"
+    },
+    {
+        "file": "",
+        "title": "Resolve",
+        "description": "A good looking debugger for Unity.",
+        "category": "Unity C# Debugging",
+        "date": "Jul 2022",
+        "url": "https://github.com/Quartzified-Tools/Resolve"
+    },
+    {
+        "file": "",
+        "title": "Quickkeep",
+        "description": "It's just like PlayerPrefs with more control and easier to handle.",
+        "category": "Unity C# Data PlayerPrefs",
+        "date": "Jul 2022",
+        "url": "https://github.com/Quartzified-Tools/QuickKeep"
+    }
+]

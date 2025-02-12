@@ -1,0 +1,67 @@
+[
+    {
+        "file": "",
+        "title": "Minimo",
+        "description": "Minimo is a simple 2D action packed Mini Online RPG. Pick between 2 factions, fight monsters to become stronger and defeat the enemy in fast paced PvP. Thats the goal at least :) ( I stream the development on twitch )",
+        "category": "MMORPG",
+        "date": "In Progress",
+        "url": "https://twitch.tv/quartzi"
+    },
+    {
+        "file": "",
+        "title": "Aukedora",
+        "description": "Aukedora is my dream project. An MMORPG that takes me back in time, when things were simpler. It is a huge project to do by myself. So the only right decision is of course to make a smaller MMORPG first. ( It is already playable >.< )",
+        "category": "MMORPG",
+        "date": "Paused",
+        "url": ""
+    },
+    {
+        "file": "",
+        "title": "Gunflinger",
+        "description": "A delightful and casual mini-game that takes you to the Wild West theatre where a rabbit cowboy steals the show! Get ready to witness incredible tricks as our gunslinger flings himself through the air, collecting bullets to keep the performance going.",
+        "category": "Arcade",
+        "date": "Jun 2023",
+        "url": "https://quartzi.itch.io/gunflinger"
+    },
+    {
+        "file": "",
+        "title": "The Idle Lumberer",
+        "description": "The Idle Lumberer is a simplistic idle game. You simply chop down trees for logs, and sell them for upgrades.",
+        "category": "Idle",
+        "date": "Aug 2021",
+        "url": "https://quartzified-studios.itch.io/idle-lumberer"
+    },
+    {
+        "file": "",
+        "title": "Tilting Ship",
+        "description": "Tilting Ship is a casual game, where you attempt to evade upcoming obstacles. I used this project to learn about the gyroscope in mobile devices and how to use it.",
+        "category": "Arcade",
+        "date": "Apr 2021",
+        "url": "https://quartzified-studios.itch.io/tilting-ship"
+    },
+    {
+        "file": "",
+        "title": "Reactangle",
+        "description": "Reactangle is a simple, reaction time game. Go test your reaction time. ^^",
+        "category": "Arcade",
+        "date": "Apr 2021",
+        "url": "https://quartzified-studios.itch.io/reactangle"
+    },
+    {
+        "file": "",
+        "title": "Drudge",
+        "description": "Drudge is my first proper attempt on random world generation. It consists of randomly generated levels which you must try to complete by reaching the end. If there is one. 'Enjoy getting lost in the library sewer.'",
+        "category": "Dungeon Crawler",
+        "date": "Nov 2020",
+        "url": "https://quartzi.itch.io/drudge"
+    },
+    {
+        "file": "",
+        "title": "Spores",
+        "description": "A game that's all about finding your inner peace and having a chill time. You play as a little blue spore with the goal to collect green spores while avoiding those sneaky purple ones.",
+        "category": "Arcade",
+        "date": "Nov 2018",
+        "url": "https://quartzi.itch.io/spores"
+    }
+    
+]

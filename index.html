@@ -1,74 +1,59 @@
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Quartzified Avenue</title>
 
-        <link rel="icon" href="assets/icon.png" sizes="32x32">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Quartzi</title>
+        <link rel="icon" type="image/svg+xml" href="/art/Quirks.svg">
 
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/navbar.css">
-
-        <link rel="stylesheet" type="text/css" href="css/home.css">
-
-        <script src="js/jquery.js"></script>
-        <script>
-            $(function() {
-                $('[id$="-include"]').each(function (e) 
-                {
-                    $(this).load("snippets\\" + $(this).attr("id").replace("-include", "") + ".html", function() 
-                    {
-                        $(document).trigger('themeSwitcher:load');
-                    });
-                });
-            })
-        </script>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/content.css">
     </head>
     <body>
-        <div id="topnav-include"></div>
-        
-        <section class="home" id="home">
-            <div class="home-content">
-                <h3>Hello, I am</h3>
-                <h1>Quartzi</h1>    
-                <p>A driven and determined individual who has developed their skills in game development and software engineering through
-                self-directed learning and a commitment to personal growth.</p>
+        <!-- Header will be loaded here -->
+        <div id="header-placeholder"></div>
 
-                <div class="social-media">
-                    <a href="https://www.twitch.tv/quartzi" target="_blank"><i class='bx bxl-twitch'></i></a>
-                    <a href="https://www.youtube.com/@quartzi" target="_blank"><i class='bx bxl-youtube'></i></a>
-                    <a href="https://twitter.com/realQuartzi" target="_blank"><i class='bx bxl-twitter'></i></a>
-                    <a href="https://www.tiktok.com/@realquartzi" target="_blank"><i class='bx bxl-tiktok'></i></i></a>
-                    <a href="https://discord.gg/HJ9GQ6r" target="_blank"><i class='bx bxl-discord-alt'></i></i></a>
-                </div>
-                <div class="project-media">
-                    <a href="https://www.quartzified.com"><i class='bx bx-joystick'></i></i></a>
-                    <a href="https://github.com/realQuartzi"><i class='bx bxl-github' ></i></i></a>
-                </div>
-
-                <a href="https://www.aukedora.com" class="button">Aukedora</a>
+        <main class="main-content">
+            <div class="welcome-section">
+                <h1>Welcome to my Realm</h1>
+                <p>A collection of my thoughts, projects, and creations.</p>
             </div>
 
-            <div class="profession-container">
-                <div class="profession-box"></div>
-
-                <div class="overlay">
-                    <div class="home-img">
-                        <img src="assets/Avatar_smile.png" alt="Quartzi">
-                    </div>
+            <div class="content">
+                <div class="center-card">
+                    <h2>New peep, who dis?</h1>
+                    <p>Hey, I am Quartzi, a game developer, software engineer, full-stack creator, and delusional for believing these "titles" mean anything.</p>
+                    <p>My journey began many Warcraft raids ago, tinkering with code, and it hasn’t stopped since. I explore everything from game mechanics to software architecture, always chasing the next challenge. The current one being a solo MMORPG developer. ^^</p>
+                    <h2>What does this peep do?</h2>
+                    <p>My work spans across various technologies, including:</p>
+                    <p><b>Game Development:</b> Unity, Unreal, Godot, etc. and modding for games like <i>World of Warcraft</i>, <i>Minecraft</i>, <i>Terraria</i> and anything I can get my fingers around.</p>
+                    <p><b>Software Engineering:</b> Full-stack development with C#, Javascript, Typescript, Python, C++, and more.</p>
+                    <p><b>Creative Exploration:</b> Writing, music, and open-source contributions that support fellow developers.</p>
+                    <br>
+                    <p>This website isn’t a portfolio in the traditional sense... it’s a growing archive of my thoughts, projects, and experiments. I build because I love to create, not because I need to sell.</p>
+                    <h2>Why does this site exist?</h2>
+                    <p>I’m here to share, document, and connect. Whether it’s through coding, streaming, writing, or experimenting with new ideas, this space is a reflection of many things I’ve worked on.</p>
+                    <p>If you’re curious, feel free to explore. No expectations... just creativity.</p>
+                    <br>
+                    <p>( No I am not changing the font... I like it... just get over it <3 )</p>
                 </div>
             </div>
+            <br>
+            <div class="content-grid">
+                <div class="content-card">
+                    <a href="/blog.html" class="button">Totally Trustworthy Blog</a>
+                    <p>Check out the latest insights, rants, and questionable wisdom I have to share. Definetly 100% trust worthy information.</p>
+                </div>
+                
+                <div class="content-card">
+                    <a href="https://twitch.tv/yourchannel" target="_blank" class="button">Live on Twitch!</a>
+                    <p>I’m developing and playing games live... come hang out and see what I’m working on! You will definetly not regret it >.<</p>
 
+                </div>
+            </div>
+        </main>
 
-        </section>
-
-        <footer class="footer">
-
-        </footer>
-
-
-        <!-- <div class="avatar"></div> -->
-        <!-- <div id="footer-include"></div> -->
+        <script src="js/main.js"></script>
+        <script src="js/theme.js"></script>
     </body>
 </html>

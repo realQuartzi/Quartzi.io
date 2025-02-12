@@ -1,0 +1,66 @@
+[
+    {
+        "file": "",
+        "title": "Idle Dungeon Manager",
+        "description": "Idle Dungeon Manager is an idle RPG where you manage dungeons, summon heroes, and battle monsters to collect loot. Strategically upgrade your heroes, compete in PvP battles, and explore deep dungeons to become the ultimate dungeon tycoon.",
+        "category": "Coldfire Games GmbH",
+        "date": "Graphics & Tools Programmer",
+        "url": "https://play.google.com/store/apps/details?id=com.coldfiregames.dungeon.manager.tycoon.idle.game"
+    },
+    {
+        "file": "",
+        "title": "Idle Hiking Manager",
+        "description": "Idle Hiking Manager is a tycoon game where you build and manage scenic hiking trails. Attract hikers, upgrade paths, and grow your outdoor empire to become the ultimate hiking tycoon!",
+        "category": "Coldfire Games GmbH",
+        "date": "Lead Developer",
+        "url": "https://play.google.com/store/apps/details?id=com.coldfiregames.idle.hiking.trail.manager.game.tycoon"
+    },
+    {
+        "file": "",
+        "title": "Idle Bee Manager",
+        "description": "Idle Bee Manager is a hive-building tycoon game where you manage bees, collect honey, and expand your beehive. Research new bees, optimize production, and grow your buzzing empire—even while offline!",
+        "category": "Coldfire Games GmbH",
+        "date": "Lead Developer",
+        "url": "https://play.google.com/store/apps/details?id=com.coldfiregames.idle.bee.manager.honey.tycoon.game"
+    },
+    {
+        "file": "",
+        "title": "Idle Convention Manager",
+        "description": "Idle Convention Manager: Renewable Energy Expo is a strategic idle game where you build and manage a thriving green energy convention. Expand your expo, attract top exhibitors, and make impactful decisions to promote sustainability—all while earning passive income!",
+        "category": "Coldfire Games GmbH",
+        "date": "Assistant & Tools Programmer",
+        "url": "https://play.google.com/store/apps/details?id=com.coldfiregames.idle.eco.earth.convention.manager.game.tycoon"
+    },
+    {
+        "file": "",
+        "title": "Idle Space Manager",
+        "description": "Idle Space Manager is a tycoon game where you manage a fleet of spaceships, upgrade hangars, and earn passive income. Research new ships, automate your space business, and expand your empire beyond the stars!",
+        "category": "Coldfire Games GmbH",
+        "date": "Assistant & Tools Programmer",
+        "url": "https://play.google.com/store/apps/details?id=com.coldfiregames.cargoempire"
+    },
+    {
+        "file": "",
+        "title": "Idle Space Clicker",
+        "description": "Idle Space Clicker was an action-packed idle game where you piloted and upgraded a powerful spaceship to battle endless waves of enemies. Collect resources, enhance your ship, and become the ultimate space hero tycoon!",
+        "category": "Coldfire Games GmbH",
+        "date": "Assistant & Tools Programmer",
+        "url": "https://play.google.com/store/apps/details?id=com.coldfiregames.spaceclicker"
+    },
+    {
+        "file": "",
+        "title": "Pawsome Backery",
+        "description": "Pawsome Bakery is an adorable 3D bakery game where cats run the shop and serve fellow feline customers. Bake delicious treats, prepare drinks, and upgrade your bakery to create the purrfect café experience!",
+        "category": "LeoByte",
+        "date": "Lead Developer",
+        "url": ""
+    },
+    {
+        "file": "",
+        "title": "Pawsome Click Backery",
+        "description": "Pawsome Click Bakery is a charming idle game where you unlock and upgrade bakery goods to generate endless profits. Watch your bakery flourish as the money keeps rolling in!",
+        "category": "LeoByte",
+        "date": "Lead Developer",
+        "url": ""
+    }
+]

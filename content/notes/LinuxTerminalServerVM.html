@@ -1,0 +1,193 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Linux Terminal Server VM</title>
+        <link rel="icon" type="image/svg+xml" href="/art/Quirks.svg">
+
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/content.css">
+    </head>
+    <body>
+        <!-- Header will be loaded here -->
+        <div id="header-placeholder"></div>
+
+        <main class="main-content">
+            <div class="welcome-section">
+                <h1>How to Create a Working Linux terminal Server using Oracle VirtualBox</h1>
+                <p>An useful guide for peeps who want to host game servers (e.g., Minecraft, Terraria, AzerothCore, etc.) or other applications on a Linux Terminal Server.</p>
+                <h3>Prerequisites</h3>
+                <li>Oracle VirtualBox: <a href="https://www.virtualbox.org/wiki/Downloads">virtualbox.org</a></li>
+                <li>Debian ISO: <a href="https://mirror.cogentco.com/debian-cd/current/amd64/iso-cd/">mirror.cogentco.com</a></li>
+                <p>⚠️"Click, download, and/or execute links or applications at your own risk."⚠️</p>
+            </div>
+
+            <div class="content">
+                <div class="content-card">
+                    <h2>1. VirtualBox Installation & VM Creation</h2>
+                    <ol>
+                        <li>Install VirtualBox:
+                            <ul>
+                                <li>Download and install VirtualBox like any other application. Ensure you select the desired options during installation.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Download Debian ISO:
+                            <ul>
+                                <li>Download the Debian ISO and place it in an accessible folder.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Create a New Virtual Machine:
+                            <ul>
+                                <li>Open VirtualBox and click <b>"New"</b> to create a new VM.</li>
+                                <li><b>Name:</b> Give your VM a name (e.g., "DebianVM").</li>
+                                <li><b>Folder:</b> Select the folder where the VM will be stored.</li>
+                                <li><b>ISO Image:</b> Select the Debian ISO you downloaded. This will automatically disable further selection on this tab.</li>
+                                <li><b>Type:</b> Select "Linux".</li>
+                                <li><b>Version:</b> Select "Debian (64-bit)".</li>
+                                <li><b>Skip Unattended Installation:</b> Ensure you skip unattended installation to manually configure the OS.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Configure Hardware Settings:
+                            <ul>
+                                <li><b>Memory:</b> Allocate at least <b>4-8GB</b> of RAM.</li>
+                                <li><b>Processors:</b> Assign <b>4-12 CPUs</b> depending on your system's capabilities.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Virtual Hard Disk:
+                            <ul>
+                                <li>Allocate sufficient storage for your server. A minimum of <b>32GB</b> is recommended, but adjust based on your needs.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <br>
+                <div class="content-card">
+                    <h2>2. Installing the OS</h2>
+                    <ol>
+                        <li>Start the VM:
+                            <ul>
+                                <li>After creating the VM, select it and click <b>"Start"</b>.</li>
+                                <li>The VM will boot into the Debian installer.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>BIOS Install Screen:
+                            <ul>
+                                <li>Select <b>"Install"</b> (not "Graphical Install") since this is a server VM.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>System Configuration:
+                            <ul>
+                                <li><b>Language:</b> Select your system language and locale.</li>
+                                <li><b>Keyboard:</b> Choose your keyboard layout.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Hostname:
+                            <ul>
+                                <li>Set a hostname for your VM. This will be the name used to identify the machine on the network.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Domain Name:
+                            <ul>
+                                <li>If you don’t know what to enter, use the default value provided.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Root Account:
+                            <ul>
+                                <li>Set a strong password for the <b>root</b> account (the administrative account).</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>User Account:
+                            <ul>
+                                <li>Create a regular user account:
+                                    <ul>
+                                        <li><b>Real Name:</b> Enter your name or an alias.</li>
+                                        <li><b>Username:</b> Choose a username for login.</li>
+                                        <li><b>Password:</b> Set a strong password for the user account.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Partition Disks:
+                            <ul>
+                                <li>Use <b>"Guided - use entire disk"</b> (the default option) if you’re unsure.</li>
+                                <li>Proceed with partitioning the disk.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Install Base System:
+                            <ul>
+                                <li>The base system installation will begin now. This may take some time.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Configure Package Manager:
+                            <ul>
+                                <li>When prompted to select a <b>Network Mirror</b>, choose <b>No</b> and select the region closest to you.</li>
+                                <li>This step is crucial for installing additional packages later.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Software Selection:
+                            <ul>
+                                <li>Only select <b>"SSH Server"</b> and <b>"Standard System Utilities"</b> for a minimal server setup.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>GRUB Installation:
+                            <ul>
+                                <li>Install GRUB to the master boot record (MBR) when prompted.</li>
+                                <li>Select the default directory if one is provided.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Finish Installation:
+                            <ul>
+                                <li>Once the installation is complete, click <b>"Continue"</b> to reboot the VM.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <br>
+                <div class="content-card">
+                    <h2>3. Post-Installation</h2>
+                    <ol>
+                        <li>Login:
+                            <ul>
+                                <li>After rebooting, you’ll be prompted to log in.</li>
+                                <li>Use either the <b>root</b> account or the user account you created.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Enjoy:
+                            <ul>
+                                <li>Your Linux Terminal Server is now ready for use! You can start configuring it for your specific needs (e.g., hosting game servers).</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <br>
+                <div class="content-card">
+                    <h2>Notes</h2>
+                    <li>Ensure your VM has sufficient resources (RAM, CPU, and storage) for the applications you plan to run.</li>
+                    <li>Regularly update your system using "sudo apt update && sudo apt upgrade" to keep it secure and up-to-date.</li>
+                </div>
+            </div>
+        </main>
+
+        <script src="/js/main.js"></script>
+        <script src="/js/theme.js"></script>
+    </body>
+</html>

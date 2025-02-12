@@ -1,0 +1,66 @@
+[
+    {
+        "file": "ThePuppetMaster.html",
+        "title": "The Puppet Master",
+        "description": "She is irresistible",
+        "category": "Dark Pop Ballad",
+        "date": "23 Jan 2025",
+        "url": ""
+    },
+    {
+        "file": "TheFlowerToOurPastSins.html",
+        "title": "The Flower to our Past Sins",
+        "description": "Love, loss, and regret.",
+        "category": "Folk Pop / Duet",
+        "date": "16 Jan 2025",
+        "url": ""
+    },
+    {
+        "file": "PressSave.html",
+        "title": "Press Save",
+        "description": "The cringiest song I will get to write...",
+        "category": "Pop / Cringe",
+        "date": "7 Jan 2025",
+        "url": ""
+    },
+    {
+        "file": "VirmeliasNotebook.html",
+        "title": "Virmelia's Notebook",
+        "description": "A song written for the amazing Virmelia!",
+        "category": "Folk Pop",
+        "date": "7 Jan 2025",
+        "url": ""
+    },
+    {
+        "file": "DestinysWhisper.html",
+        "title": "Destiny's Whisper",
+        "description": "A story of perspectives",
+        "category": "Pop Ballad / Duet",
+        "date": "5 Jan 2025",
+        "url": ""
+    },
+    {
+        "file": "Risgrynsgrot.html",
+        "title": "Risgrynsgröt, Risgrynsgröt",
+        "description": "A song about milk rice.",
+        "category": "Novelty Pop",
+        "date": "27 Dec 2024",
+        "url": ""
+    },
+    {
+        "file": "TheGirlINeverKnew.html",
+        "title": "The Girl I Never Knew",
+        "description": "Based on true events.",
+        "category": "Pop Ballad",
+        "date": "20 Dec 2024",
+        "url": ""
+    },
+    {
+        "file": "StrangerInTheMirror.html",
+        "title": "Stranger in the Mirror",
+        "description": "Emotional turmoil and self-discovery",
+        "category": "Pop Rock",
+        "date": "19 Dec 2024",
+        "url": ""
+    }
+]

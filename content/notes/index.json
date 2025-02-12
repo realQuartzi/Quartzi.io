@@ -1,0 +1,27 @@
+[
+    {
+        "file": "LinuxTerminalServerVM.html",
+        "title": "Linux Terminal Server VM Setup",
+        "description": "An useful guide for peeps who want to host game servers (e.g., Minecraft, Terraria, AzerothCore, etc.) or other applications on a Linux Terminal Server.",
+        "category": "Linux Server Virtual Machine",
+        "date": "2025",
+        "url": ""
+    },
+    {
+        "file": "ChunkTerrain.html",
+        "title": "Chunk Terrain Optimization",
+        "description": "Notes on how to optimize chunk generation in Unity. Chunk Sizing, Generation, Noise and more.",
+        "category": "C# Unity",
+        "date": "2020",
+        "url": ""
+    }
+    ,
+    {
+        "file": "NostaleGameMarket.html",
+        "title": "In-Game Market Development",
+        "description": "",
+        "category": "Data Analysis Nostale",
+        "date": "2019",
+        "url": ""
+    }
+]

@@ -1,0 +1,256 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Chunk Terrain Optimization</title>
+        <link rel="icon" type="image/svg+xml" href="/art/Quirks.svg">
+
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/content.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-csharp.min.js"></script>
+    </head>
+    <body>
+        <!-- Header will be loaded here -->
+        <div id="header-placeholder"></div>
+
+        <main class="main-content">
+            <div class="welcome-section">
+                <h1>Ways to Optimize Chunk Generation</h1>
+                <p>Proposed Game Engine: Unity</p>
+                <p>
+                    This is a pretty old piece I wrote. I figured out a lot of better information, specifically related to unity by now.
+                    This was all still prior to Burst and Jobs. If only I thought about pooling chunks back then >.<
+                </p>
+            </div>
+
+            <div class="content">
+                <div class="content-card">
+                    <h2>1. Noise Generation</h2>
+                    <p>
+                        Noise is the first thing that comes into play if forming terrain is in play, and therefore this should
+                        also be the first point that can be optimized. Noise is not only used for the terrain generation but
+                        could also be used for determining: Biomes, Zones, Environment Patches (Trees, Grass), etc.
+                    </p>
+                    <p>
+                        There are many different ways Noise can be generated so determining the fastest and most Byte
+                        efficient way can be really efficient but potentially not have the best results.
+                    </p>
+                    <p>
+                        Not only just the Generation of the Noise itself could be optimized but potentially how the Noise
+                        values are collected and used.
+                    </p>
+                    <p>There are different ways this could be done:</p>
+                    <li>Sampling a float [Range(0,1)] for every sample that is needed.</li>
+                    <li>Sample an 2D or 3D array of values for Chunks in 1 go.
+                        <ul>
+                            <li>float[,] 2D Array of Floats</li>
+                            <li>float[,,] 3D Array of Floats</li>
+                        </ul>
+                    </li>
+                    <p>
+                        Having different methods for Noise collection for different attributes of the procedural world
+                        could also be of some use. Fast Noise Sampling could be used for the Chunk Generation and
+                        Slower but more efficient for Biome / Zone determination.
+                    </p>
+                    <p>
+                        As Noise values are mostly determined between 0 and 1, floats instead of doubles should be
+                        considered as float only have a size of 4 bytes while double are 8 bytes.
+                    </p>
+                </div>
+                <br>
+                <div class="content-card">
+                    <h2>2. Vertex Tweaking</h2>
+                    <p>For 3D terrain, more so Voxel / Block Terrain this is very important.</p>
+                    <p>
+                        You could render out each voxel which would result in: 8 vertices per block, 6 Faces and 12 Edges.
+                        And if you were to render a Triangulated Block it would result in: 8 vertices, 12 Faces and 18
+                        Edges. This as you can see is more information that is collected in each Voxel and if for example
+                        not any UV data is require then perhaps Triangulated Meshes will not be required, saving some
+                        information.
+                    </p>
+                    <p>
+                        Not only that way can memory be saved but also if you have an array of 16x16 Blocks, only the
+                        necessary Faces that are shown on the outside / are visible to the eye and therefore only those
+                        faces would have to be established and rendered saving a lot of vertices / computing power.
+                    </p>
+                </div>
+                <br>
+                <div class="content-card">
+                    <h2>3. Coroutines</h2>
+                    <p>Coroutines are a very useful asset for larger Chunk Generations.</p>
+                    <p>
+                        Using Coroutines will allow Chunks to be Generated separately from each other, which means
+                        that instead of loading in all chunks during the same frame, they can be split and be generated
+                        one after another. This can save a lot of Computer processing power. Not only can we now
+                        control the fact that chunks are able to load one by one now, but as well we can control precisely
+                        when we want chunks to load as since we are able to delay the generation of other chunks by x
+                        amount of time.                        
+                    </p>
+                    <p>An example way of using Coroutines would be:</p>
+                    <li>Creating a List of Chunks that are required to be loaded</li>
+                    <li>Add a Boolean that tells us if a chunk is being loaded in</li>
+<pre class="code-block language-csharp"><code>// Variables
+List<Chunks> toLoadChunks = new List<Chunks>();
+boolean loadingChunk = false;
+
+// Load Chunk Call
+if(!loadingChunk)
+    StartCoroutine(LoadNewChunk());
+
+// Load Chunk Coroutine
+IEnumerator LoadNewChunk()
+{
+    loadingChunk = true;
+    if(toLoadChunks.Count > 0)
+    {
+        //Load First Chunk In List
+        toLoadChunks.RemoveAt(0);
+    }
+    loadingChunk = false;
+
+    yield return null;
+}
+</code></pre>
+                </div>
+                <br>
+                <div class="content-card">
+                    <h2>4. Chunk Sizing</h2>
+                    <p>Most Reasonable Chunk Sizes</p>
+                    <li><b>16x16x16</b> Chunks are a total size of <b>4096</b></li>
+                    <li><b>16x32x16</b> Chunks are a total size of <b>8192</b></li>
+                    <li><b>16x64x16</b> Chunks are a total size of <b>16384</b></li>
+                    <li><b>16x128x16</b> Chunks are a total size of <b>32768</b></li>
+                    <li><b>16x256x16</b> Chunks are a total size of <b>65536</b></li>
+                    <br>
+                    <li><b>32x32x32</b> Chunks are a total size of <b>32768</b></li>
+                    <li><b>32x64x32</b> Chunks are a total size of <b>65536</b></li>
+                    <li><b>32x128x32</b> Chunks are a total size of <b>131072</b></li>
+                    <br>
+                    <li><b>64x64x64</b> Chunks are a total size of <b>262144</b></li>
+                    <li><b>64x128x64</b> Chunks are a total size of <b>524288</b></li>
+                    <p>
+                        Taking into account that the Mesh index buffer data will be kept at 16 bits we are able to support
+                        65535 vertices in a single mesh.
+                    </p>
+                    <p>
+                        And then adding on top of that, we will take into account that we have already been adjusting the
+                        Vertexes with our Tweak techniques.
+                    </p>
+                    <p>
+                        From the prerequisites we can remove all chunks with a width of 64 to be over the limit even with
+                        our tweaks, leaving us with the 2 other width options but multiple height options
+                    </p>
+                    <p>
+                        If it came to optimization it would be best to limit the amount of chunks that are required to be
+                        spawned and therefore separate the height value from the width to create a taller chunk. This
+                        also helps with saving these chunks as not as many data files have to be made and edited at any
+                        given time.
+                    </p>
+                    <p>
+                        Getting the right Chunk Size is harder then expected as we are taking many (not all) possibilities
+                        into account of what this could effect, so I believe it is best to name all the ones that we are facing
+                        at this time.
+                    </p>
+                    <li>Are Chunks Editable?</li>
+                    <li>Mesh Data Size</li>
+                    <li>Mesh Load/Unload Times</li>
+                    <li>Memory Storage</li>
+                    <li>Data Saving Times</li>
+                    <li>Data Write/Read Delay</li>
+
+                    <h3>Are Chunks Editable?</h3>
+                    <p>
+                        The Mesh Data size will determine if we will be able to load in the chunk faster or slower. To
+                        clarify what is meant with Mesh Data Size, it is all the information that is stored in the mesh and
+                        which has to be evaluated and developed during the creation of the mesh, which can contain, the
+                        Mesh Vertex Data, Vertex Color, UV Data and other things. For the most efficient scenario having
+                        smaller chunks will make this step faster.                        
+                    </p>
+
+                    <h3>Mesh Load / Unload Times</h3>
+                    <p>
+                        This is highly determined on the system that will have to execute this. Loading smaller Chunks is
+                        faster then loading bigger chunks, but if we are loading smaller chunks this means that we will be
+                        loading more chunks as well dependent on our render distance. The difference between a chunk
+                        of 16 size and 32 size can be estimated to take 8 the difference in time.                        
+                    </p>
+                    <p>But how are we going to load in the Chunks?</p>
+                    <p>
+                        There are 2 main ways of doing it.
+                        First way would be to Instantiate an Empty GameObject and feed all the values to it.
+                        The second and more efficient way is, Creating a GameObject from scratch and feeding all the
+                        information to it then.    
+                    </p>
+<pre class="code-block language-csharp"><code>// Established Object for this Chunk
+GameObject chunkObj;
+
+// Components Required
+MeshRenderer meshRenderer;
+MeshFilter meshFilter;
+
+// Chunk Data
+List<Vector3> vertices = new List<Vector3>(); // 12 Bytes per Input
+List<Color> color = new List<Color>(); // 12 Bytes per Input (I believe or 3 Bytes)
+
+List<int> triangles = new List<int>(); // 4 Bytes per Input
+List<Vector2> uvs = new List<Vector2>(); // 8 Bytes Per Input (Not Necessary if no Textures)
+
+public byte[,,] voxelMap = new byte[width, height, width];
+
+// Initialize a Chunk
+public void Init()
+{
+    chunkObj = new GameObject();
+
+    meshFilter = chunkObj.AddComponent<MeshFilter>();
+    meshRenderer = chunkObj.AddComponent<MeshRenderer>();
+
+    meshRenderer.material = 0; // Get Material that allows for Vertex Colors
+
+    // Set Parent
+    // Set Position
+    // Set Name (Coordinate Name)
+
+    //PopulateVoxelMap
+    //CreateMeshData
+    //CreateMesh
+}
+</code></pre>
+                    <p>
+                        Shown above allows us to create a Chunk without instantiating an GameObject to edit which
+                        saves a lot of processing power.                        
+                    </p>
+                    <p>
+                        Unloading on the other hand we only really have 2 methods available to us: Destroy and
+                        SetActive(false). If we are not going to reuse the Chunk then Destroying it is the way to go. 
+                        But the question is still how will we unload a Chunk?
+                    </p>
+                    <p>
+                        The best way to unload a chunk is to destroy it without losing its data. So the Chunk when created
+                        will be added to a list of Chunks. So when we need to recreate the Chunk we can grab it from the
+                        List and then rebuild it. Now if we where to keep adding Chunks to the list we would get a
+                        memory overload, therefore when you reach a specific distance away from the chunk it will then
+                        as well be removed from this List.
+                    </p>
+                </div>
+                <br>
+                <div class="content-card">
+                    <h2>Future Note</h2>
+                    <p>A lot of the information here is pretty decent to read. But the majority of it is nonsense that you
+                        do not need to worry about. If you can get to the point where you are able to create and load in chunks and unload 
+                        the ones you do not need (frustum culling) you are on a good path. Make sure you reuse chunks that are currently not being rendered. 
+                        There is no reason to ever Destroy a chunk. Just reuse the object and save yourself the destroy and instantiate... they cost a lot.  
+                        And don't get to greedy when you first begin. If you have some working generation look into greedy meshing, it will do wonders.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <script src="/js/main.js"></script>
+        <script src="/js/theme.js"></script>
+    </body>
+</html>

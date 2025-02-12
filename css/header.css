@@ -1,0 +1,164 @@
+/* Header Styles */
+.header 
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--card-light);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dark-mode .header 
+{
+    background-color: var(--card-dark);
+}
+
+.nav
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo img 
+{
+    height: 42px; /* Adjust size as needed */
+    width: auto;
+    display: block;
+}
+
+.logo 
+{
+    display: flex;
+    align-items: center;
+    margin-right: 32px; /* Add spacing from nav items */
+}
+
+.nav-links a 
+{
+    margin-right: 2rem;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover 
+{
+    color: #5570e6;
+}
+
+.nav-icons 
+{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: auto;
+}
+
+.icon-button 
+{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.icon-button:hover 
+{
+    color: #3b82f6;
+}
+
+.material-icons 
+{
+    font-size: 24px;
+}
+
+/* Dropdown container */
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn 
+{
+    text-decoration: none;
+    padding: 12px 0px;
+    color: var(--text-light);
+    transition: 0.3s;
+}
+
+.dark-mode .dropbtn 
+{
+    color: var(--text-dark);
+}
+
+.dropbtn:hover 
+{
+    color: var(--bg-dark);
+}
+
+.dark-mode .dropbtn:hover 
+{
+    color: var(--bg-light);
+}
+
+.dropdown-content 
+{
+    margin-top: 8px;
+    display: none;
+    position: absolute;
+    background-color: var(--bg-dark);
+    min-width: 160px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.dark-mode .dropdown-content
+{
+    background-color: var(--bg-light);
+}
+
+.dropdown-content a 
+{
+    color: var(--text-dark);
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.dark-mode .dropdown-content a
+{
+    color: var(--text-light);
+}
+
+.dropdown-content a:hover 
+{
+    background-color: var(--card-light);
+    color: var(--text-light);
+    border-radius: 4px;
+}
+
+.dark-mode .dropdown-content a:hover
+{
+    background-color: var(--card-dark);
+    color: var(--text-dark);
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
