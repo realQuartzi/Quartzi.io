@@ -1,4 +1,13 @@
 [
+    
+    {
+        "file": "NostaleUsefulItems.html",
+        "title": "Nostale Useful Items List",
+        "description": "A list of specific 'non obvious' items that would be good to keep.",
+        "category": "Nostale Items Utility",
+        "date": "2025",
+        "url": ""
+    },
     {
         "file": "LinuxTerminalServerVM.html",
         "title": "Linux Terminal Server VM Setup",
@@ -14,8 +23,7 @@
         "category": "C# Unity",
         "date": "2020",
         "url": ""
-    }
-    ,
+    },
     {
         "file": "NostaleGameMarket.html",
         "title": "In-Game Market Development",

@@ -176,3 +176,10 @@ tr:nth-child(even)
         grid-template-columns: 1fr;
     }
 }
+
+
+li img 
+{
+    width: 24px;
+    height: 24px;
+}
