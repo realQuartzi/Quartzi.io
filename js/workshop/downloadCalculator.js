@@ -6,7 +6,8 @@ function calculateTime()
     const speedUnit = document.getElementById('speedUnit').value;
     
     // Validate inputs
-    if (isNaN(fileSize) || isNaN(downloadSpeed) || fileSize <= 0 || downloadSpeed <= 0) {
+    if (isNaN(fileSize) || isNaN(downloadSpeed) || fileSize <= 0 || downloadSpeed <= 0) 
+    {
         alert("Please enter valid positive numbers for file size and download speed.");
         return;
     }
