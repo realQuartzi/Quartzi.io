@@ -1,0 +1,78 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Chunk Terrain Optimization</title>
+        <link rel="icon" type="image/svg+xml" href="/art/Quirks.svg">
+
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/content.css">
+        <link rel="stylesheet" href="/css/workshop.css">
+
+        <script src="/js/workshop/downloadCalculator.js"></script>
+    </head>
+    <body>
+        <!-- Header will be loaded here -->
+        <div id="header-placeholder"></div>
+
+        <main class="main-content">
+            <div class="welcome-section">
+                <h1>Download Time Calculator</h1>
+                <p>Because there weren't enough already.</p>
+            </div>
+
+            <div class="content">
+                <div class="center-card">
+                    <div class="input-group">
+                        <label for="fileSize">File Size:</label>
+                        <input type="number" id="fileSize" min="0" step="0.01" placeholder="Enter file size">
+                        <select id="fileSizeUnit">
+                            <option value="Bits">Bits</option>
+                            <option value="Bytes">Bytes (B)</option>
+                            <option value="KB">Kilobytes (KB)</option>
+                            <option value="MB" selected>Megabytes (MB)</option>
+                            <option value="GB">Gigabytes (GB)</option>
+                            <option value="TB">Terabytes (TB)</option>
+                            <option value="PB">Petabytes (PB)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="downloadSpeed">Download Speed:</label>
+                        <input type="number" id="downloadSpeed" min="0" step="0.01" placeholder="Enter download speed">
+                        <select id="speedUnit">
+                            <option value="Bits">Bits/s</option>
+                            <option value="Bytes">Bytes/s</option>
+                            <option value="Kbps">Kilobits/s (Kbps)</option>
+                            <option value="KBps">Kilobytes/s (KBps)</option>
+                            <option value="Mbps">Megabits/s (Mbps)</option>
+                            <option value="MBps" selected>Megabytes/s (MBps)</option>
+                            <option value="Gbps">Gigabits/s (Gbps)</option>
+                            <option value="GBps">Gigabytes/s (GBps)</option>
+                            <option value="Tbps">Terabits/s (Tbps)</option>
+                            <option value="TBps">Terabytes/s (TBps)</option>
+                            <option value="Pbps">Petabits/s (Pbps)</option>
+                            <option value="PBps">Petabytes/s (PBps)</option>
+                        </select>
+                    </div>
+                    
+                    <button onclick="calculateTime()">Calculate Download Time</button>
+        
+                    <div class="output">
+                        <div class="output-label">Download Time:</div>
+                        <div class="result" id="wordFormat">-</div>
+                    </div>
+                    
+                    <div class="output">
+                        <div class="output-label">Time Format:</div>
+                        <div class="result" id="timeFormat">-</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="/js/main.js"></script>
+        <script src="/js/theme.js"></script>
+    </body>
+</html>

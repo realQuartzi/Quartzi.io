@@ -1,0 +1,107 @@
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.input-group 
+{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label 
+{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+.dark-mode label 
+{
+    color: var(--text-dark);
+}
+
+input, select 
+{
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--bg-dark);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+
+}
+
+.dark-mode input, select 
+{
+    border: 1px solid var(--bg-light);
+}
+
+.content button 
+{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #45e04a;
+    color: var(--text-light);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.dark-mode .content button 
+{
+    color: var(--text-dark);
+}
+
+.content button:hover 
+{
+    background-color: #23b42b;
+}
+
+.output 
+{
+    background-color: var(--bg-light);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.dark-mode .output 
+{
+    background-color: var(--bg-dark);
+}
+
+.output-label 
+{
+    font-weight: bold;
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
+
+.dark-mode .output-label 
+{
+    color: var(--text-dark);
+}
+
+.result 
+{
+    font-size: 18px;
+    color: var(--text-light);
+}
+
+.dark-mode .result 
+{
+    font-size: 18px;
+    color: var(--text-dark);
+}
