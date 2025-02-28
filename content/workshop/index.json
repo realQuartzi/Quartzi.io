@@ -1,5 +1,12 @@
 [
-    
+    {
+        "file": "GithubSearcher.html",
+        "title": "Github Repository Text Searcher",
+        "description": "Easily find specific lines of code within a public github repository.",
+        "category": "Utility Github Searcher",
+        "date": "2025",
+        "url": ""
+    },
     {
         "file": "DownloadCalculator.html",
         "title": "Download Speed Calculator",

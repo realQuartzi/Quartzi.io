@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Github Text Searcher</title>
+        <link rel="icon" type="image/svg+xml" href="/art/Quirks.svg">
+
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/content.css">
+        <link rel="stylesheet" href="/css/workshop.css">
+        <link rel="stylesheet" href="/css/workshop/githubsearcher.css">
+
+        <script src="/js/workshop/githubSearcher.js"></script>
+    </head>
+    <body>
+        <main class="main-content">
+            <div class="welcome-section">
+                <h1>GitHub Repository Text Searcher</h1>
+                <p>I couldn'T find this tool anywhere so I made it myself... maybe I am just bad at searching o.o</p>
+                <p>It is not 100% perfect, but it gets the job done 👍</p>
+            </div>
+
+            <div class="content">
+                <div class="center-card">
+                    <input type="text" id="repoUrl" placeholder="GitHub Repo URL">
+                    <input type="text" id="directory" placeholder="Optional: Directory to Search">
+                    <input type="text" id="searchText" placeholder="Text to Search">
+                    <input type="text" id="fileExtensions" placeholder="Optional: File Extensions (e.g., js, html, css)">
+
+                    <button id="searchButton" onclick="toggleSearch()">Search</button>
+                    <div id="progress"></div>
+                    <div id="summary"></div>
+                    <div id="results"></div>
+                </div>
+            </div>
+        </main>
+
+        <script src="/js/main.js"></script>
+        <script src="/js/theme.js"></script>
+    </body>
+</html>

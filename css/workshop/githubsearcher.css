@@ -1,0 +1,41 @@
+#results 
+{ 
+    margin-top: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 4px; 
+}
+
+.result-item 
+{ 
+    background: var(--bg-light);
+    padding: 8px;
+    border: 1px solid var(--card-light);
+    border-radius: 6px;
+}
+
+.dark-mode .result-item 
+{ 
+    background: var(--bg-dark);
+    border: 1px solid var(--card-dark);
+}
+
+.file-link 
+{ 
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-link); 
+    display: block;
+}
+
+#progress 
+{ 
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#summary 
+{ 
+    font-weight: bold;
+    margin-top: 10px;
+}
