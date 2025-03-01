@@ -1,0 +1,38 @@
+.difference
+{
+    background-color: var(--bg-light);
+    padding: 4px;
+    margin: 4px 0;
+    border-radius: 4px;
+}
+
+.dark-mode .difference
+{
+    background-color: var(--bg-dark);
+    padding: 4px;
+    margin: 4px 0;
+    border-radius: 4px;
+}
+
+.added
+{
+    background-color: #84eb8477;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+.removed
+{
+    background-color: #ef5a5a77;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+pre
+{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px;
+}

@@ -32,10 +32,9 @@ input, select
     width: 100%;
     padding: 8px;
     border: 1px solid var(--bg-dark);
-    border-radius: 5px;
+    border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 4px;
-
 }
 
 .dark-mode input, select 
@@ -50,7 +49,7 @@ input, select
     color: var(--text-light);
     border: none;
     padding: 12px 20px;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
     width: 100%;
@@ -71,7 +70,7 @@ input, select
 .output 
 {
     background-color: var(--bg-light);
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 15px;
     margin-bottom: 15px;
     text-align: center;
@@ -104,4 +103,38 @@ input, select
 {
     font-size: 18px;
     color: var(--text-dark);
+}
+
+textarea
+{
+
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: 72px;
+    color: var(--text-light);
+    border: 1px solid var(--bg-dark);
+    background-color: var(--card-light);
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-left: 6px;
+    margin-bottom: 4px;
+}
+
+.dark-mode textarea
+{
+    color: var(--text-dark);
+    border: 1px solid var(--bg-light);
+    background-color: var(--card-dark);
+}
+
+textarea::placeholder
+{
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
+.dark-mode textarea::placeholder
+{
+    color: var(--text-dark);
+    opacity: 0.8;
 }

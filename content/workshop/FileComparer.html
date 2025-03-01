@@ -1,0 +1,50 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>File & Text Comparer</title>
+        <link rel="icon" type="image/svg+xml" href="/art/Quirks.svg">
+
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/content.css">
+        <link rel="stylesheet" href="/css/workshop.css">
+        <link rel="stylesheet" href="/css/workshop/fileComparer.css">
+
+        <script src="/js/workshop/fileComparer.js"></script>
+    </head>
+    <body>
+        <main class="main-content">
+            <div class="welcome-section">
+                <h1>File & Text Comparer</h1>
+                <p>You can never be to sure >.<</p>
+                <p>(The algorithm could for sure be better though, but it can do simple checks ^^)</p>
+            </div>
+
+            <div class="content">
+                <div class="center-card">
+                    <h2>Compare Files</h2>
+                    <input type="file" id="file1" onchange="loadFile(event, 0)">
+                    <input type="file" id="file2" onchange="loadFile(event, 1)">
+                    <button onclick="compareFiles()">Compare Files</button>
+                    <h3>Differences:</h3>
+                    <p id="fileProgress"></p>
+                    <pre id="fileResult"></pre>
+                </div>
+                <br>
+                <div class ="center-card">
+                    <h2>Compare Text</h2>
+                    <textarea id="text1" placeholder="Enter 1st text..."></textarea>
+                    <textarea id="text2" placeholder="Enter 2nd text..."></textarea>
+                    <button onclick="compareTextInputs()">Compare Text</button>
+                    <h3>Differences:</h3>
+                    <p id="textProgress"></p>
+                    <pre id="textResult"></pre>
+                </div>
+            </div>
+        </main>
+
+        <script src="/js/main.js"></script>
+        <script src="/js/theme.js"></script>
+    </body>
+</html>

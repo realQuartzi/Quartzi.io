@@ -14,5 +14,13 @@
         "category": "Utility Conversion Calculator",
         "date": "2025",
         "url": ""
+    },
+    {
+        "file": "FileComparer.html",
+        "title": "File & Text Comparer",
+        "description": "Easily compare two files or text inputs to identify differences. This tool highlights modifications with clear visual markers.",
+        "category": "Utility File Text Compare",
+        "date": "2025",
+        "url": ""
     }
 ]
