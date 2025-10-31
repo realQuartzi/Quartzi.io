@@ -1,0 +1,17 @@
+{
+  "topics": 
+  [
+    {
+      "name": "Monster Hunter Wilds",
+      "sheets": ["Default"]
+    },
+    {
+      "name": "Overwatch 2",
+      "sheets": ["Default"]
+    },
+    {
+      "name": "Planetside 2",
+      "sheets": ["Medic", "Engineer"]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+[
+  {
+    "title": "Capture a Base",
+    "description": "Successfully capture any facility or outpost."
+  },
+  {
+    "title": "Defend a Base",
+    "description": "Prevent the enemy from capturing a facility you own."
+  },
+
+  {
+    "title": "Spawn Beacon Deployed",
+    "description": "Deploy a spawn beacon for your squad."
+  },
+
+  {
+    "title": "Destroy a Vehicle",
+    "description": "Eliminate any enemy vehicle using C4, rockets, or weapon fire."
+  },
+  {
+    "title": "Repair a Vehicle",
+    "description": "Use your repair tool to repair an allied vehicle. (At least 50%)"
+  },
+
+  {
+    "title": "Revive a Teammate",
+    "description": "Bring a fallen ally back into battle with your medical applicator."
+  },
+  {
+    "title": "Necromancer",
+    "description": "Revive 5 teammates using a single Revive Grenade."
+  },
+
+  {
+    "title": "Kill Streak",
+    "description": "Achieve 5 kills without dying."
+  },
+  {
+    "title": "Vehicle Kill Streak",
+    "description": "Destroy 3 enemy vehicles without dying."
+  },
+  {
+    "title": "Headshot Kill",
+    "description": "Score a headshot kill with any weapon."
+  },
+  {
+    "title": "Kill a Max",
+    "description": "Destroy an enemy MAX unit."
+  },
+  {
+    "title": "Kill MAX as MAX",
+    "description": "Defeat another MAX while playing as a MAX."
+  },
+  {
+    "title": "RPG Kill",
+    "description": "Eliminate an enemy with a rocket launcher."
+  },
+  {
+    "title": "C4 Kill",
+    "description": "Eliminate an enemy with a C4 detonation."
+  },
+  {
+    "title": "Kill a Cloaker",
+    "description": "Eliminate a cloaked enemy infiltrator."
+  },
+  {
+    "title": "Kill Through Smoke",
+    "description": "Eliminate a kill while visibility is obscured by smoke."
+  },
+  {
+    "title": "Kill a Bounty",
+    "description": "Eliminate a player marked with a bounty."
+  },
+  {
+    "title": "Kill a Light Assault",
+    "description": "Eliminate a Light Assault enemy."
+  },
+  {
+    "title": "Kill a Heavy",
+    "description": "Eliminate a Heavy Assault enemy."
+  },
+  {
+    "title": "Kill a Medic",
+    "description": "Eliminate a Combat Medic enemy."
+  },
+  {
+    "title": "Kill an Engineer",
+    "description": "Eliminate a Engineer enemy."
+  },
+  {
+    "title": "Kill an Infiltrator",
+    "description": "Eliminate an Infiltrator enemy."
+  },
+  {
+    "title": "Become a Bounty",
+    "description": "Earn a bounty on yourself."
+  },
+  {
+    "title": "One Life",
+    "description": "Win a fight with 1 hp remaining."
+  },
+
+  {
+    "title": "Destroy a Generator",
+    "description": "Overload and destroy a base generator."
+  },
+  {
+    "title": "Hack a Terminal",
+    "description": "Use the Infiltrator class to hack a terminal."
+  },
+  {
+    "title": "Destroy a Spawn Beacon",
+    "description": "Destroy an enemy spawn beacon."
+  },
+
+  {
+    "title": "Roadkill",
+    "description": "Run over an enemy with a ground vehicle."
+  },
+  {
+    "title": "Sunderer Deployed",
+    "description": "Deploy a Sunderer that allies use as a spawn point. (Players must spawn on it)"
+  },
+
+  {
+    "title": "Anti-Air",
+    "description": "Destroy any Air Vehicle."
+  }
+]

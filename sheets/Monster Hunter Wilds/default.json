@@ -1,0 +1,349 @@
+[
+    {
+        "title": "Slay Ajaraken",
+        "description": "Slay an Ajaraken"
+    },
+    {
+        "title": "Capture Ajaraken",
+        "description": "Capture an Ajaraken"
+    },
+
+    {
+        "title": "Slay Arkveld",
+        "description": "Slay an Arkveld"
+    },
+    {
+        "title": "Capture Arkveld",
+        "description": "Capture an Arkveld"
+    },
+
+    {
+        "title": "Slay Balahara",
+        "description": "Slay a Balahara"
+    },
+    {
+        "title": "Capture Balahara",
+        "description": "Capture a Balahara"
+    },
+
+    {
+        "title": "Slay Blangonga",
+        "description": "Slay a Blangonga"
+    },
+    {
+        "title": "Capture Blangonga",
+        "description": "Capture a Blangonga"
+    },
+
+    {
+        "title": "Slay Chatacabra",
+        "description": "Slay a Chatacabra"
+    },
+    {
+        "title": "Capture Chatacabra",
+        "description": "Capture a Chatacabra"
+    },
+
+    {
+        "title": "Slay Congalala",
+        "description": "Slay a Congalala"
+    },
+    {
+        "title": "Capture Congalala",
+        "description": "Capture a Congalala"
+    },
+
+    {
+        "title": "Slay Doshaguma",
+        "description": "Slay a Doshaguma"
+    },
+    {
+        "title": "Capture Doshaguma",
+        "description": "Capture a Doshaguma"
+    },
+
+    {
+        "title": "Slay Guardian Doshaguma",
+        "description": "Slay a Guardian Doshaguma"
+    },
+    {
+        "title": "Capture Guardian Doshaguma",
+        "description": "Capture a Guardian Doshaguma"
+    },
+
+    {
+        "title": "Slay Gore Magala",
+        "description": "Slay a Gore Magala"
+    },
+    {
+        "title": "Capture Gore Magala",
+        "description": "Capture a Gore Magala"
+    },
+
+    {
+        "title": "Slay Gravios",
+        "description": "Slay a Gravios"
+    },
+    {
+        "title": "Capture Gravios",
+        "description": "Capture a Gravios"
+    },
+
+    {
+        "title": "Slay Guardian Ebony Odogaron",
+        "description": "Slay a Guardian Ebony Odogaron"
+    },
+    {
+        "title": "Capture Guardian Ebony Odogaron",
+        "description": "Capture a Guardian Ebony Odogaron"
+    },
+
+    {
+        "title": "Slay Guardian Fulgur Anjanath",
+        "description": "Slay a Guardian Fulgur Anjanath"
+    },
+    {
+        "title": "Capture Guardian Fulgur Anjanath",
+        "description": "Capture a Guardian Fulgur Anjanath"
+    },
+
+    {
+        "title": "Slay Gypceros",
+        "description": "Slay a Gypceros"
+    },
+    {
+        "title": "Capture Gypceros",
+        "description": "Capture a Gypceros"
+    },
+
+    {
+        "title": "Slay Hirabami",
+        "description": "Slay a Hirabami"
+    },
+    {
+        "title": "Capture Hirabami",
+        "description": "Capture a Hirabami"
+    },
+
+    {
+        "title": "Slay Jin Dahaad",
+        "description": "Slay a Jin Dahaad"
+    },
+
+    {
+        "title": "Slay Lagiacrus",
+        "description": "Slay a Lagiacrus"
+    },
+    {
+        "title": "Capture Lagiacrus",
+        "description": "Capture a Lagiacrus"
+    },
+
+    {
+        "title": "Slay Lala Barina",
+        "description": "Slay a Lala Barina"
+    },
+    {
+        "title": "Capture Lala Barina",
+        "description": "Capture a Lala Barina"
+    },
+
+    {
+        "title": "Slay Mizutsune",
+        "description": "Slay a Mizutsune"
+    },
+    {
+        "title": "Capture Mizutsune",
+        "description": "Capture a Mizutsune"
+    },
+
+    {
+        "title": "Slay Nerscylla",
+        "description": "Slay a Nerscylla"
+    },
+    {
+        "title": "Capture Nerscylla",
+        "description": "Capture a Nerscylla"
+    },
+
+    {
+        "title": "Slay Nu Udra",
+        "description": "Slay a Nu Udra"
+    },
+    {
+        "title": "Capture Nu Udra",
+        "description": "Capture a Nu Udra"
+    },
+
+    {
+        "title": "Slay Omega Planetes",
+        "description": "Slay an Omega Planetes"
+    },
+
+    {
+        "title": "Slay Quematrice",
+        "description": "Slay a Quematrice"
+    },
+    {
+        "title": "Capture Quematrice",
+        "description": "Capture a Quematrice"
+    },
+
+    {
+        "title": "Slay Rathalos",
+        "description": "Slay a Rathalos"
+    },
+    {
+        "title": "Capture Rathalos",
+        "description": "Capture a Rathalos"
+    },
+
+    {
+        "title": "Slay Guardian Rathalos",
+        "description": "Slay a Guardian Rathalos"
+    },
+    {
+        "title": "Capture Guardian Rathalos",
+        "description": "Capture a Guardian Rathalos"
+    },
+
+    {
+        "title": "Slay Rathian",
+        "description": "Slay a Rathian"
+    },
+    {
+        "title": "Capture Rathian",
+        "description": "Capture a Rathian"
+    },
+
+    {
+        "title": "Slay Ray Dau",
+        "description": "Slay a Ray Dau"
+    },
+    {
+        "title": "Capture Ray Dau",
+        "description": "Capture a Ray Dau"
+    },
+
+    {
+        "title": "Slay Rompopolo",
+        "description": "Slay a Rompopolo"
+    },
+    {
+        "title": "Capture Rompopolo",
+        "description": "Capture a Rompopolo"
+    },
+
+    {
+        "title": "Slay Seregios",
+        "description": "Slay a Seregios"
+    },
+    {
+        "title": "Capture Seregios",
+        "description": "Capture a Seregios"
+    },
+
+    {
+        "title": "Slay Uth Duna",
+        "description": "Slay an Uth Duna"
+    },
+    {
+        "title": "Capture Uth Duna",
+        "description": "Capture an Uth Duna"
+    },
+
+    {
+        "title": "Slay Xu Wu",
+        "description": "Slay a Xu Wu"
+    },
+    {
+        "title": "Capture Xu Wu",
+        "description": "Capture a Xu Wu"
+    },
+
+    {
+        "title": "Slay Yian Kut-Ku",
+        "description": "Slay a Yian Kut-Ku"
+    },
+    {
+        "title": "Capture Yian Kut-Ku",
+        "description": "Capture a Yian Kut-Ku"
+    },
+
+    {
+        "title": "Slay Zoh Shia",
+        "description": "Slay a Zoh Shia"
+    },
+
+    {
+        "title": "Slay Tempered Monster",
+        "description": "Slay a Tempered Monster"
+    },
+    {
+        "title": "Capture Tempered Monster",
+        "description": "Capture a Tempered Monster"
+    },
+
+    {
+        "title": "Slay Arch-Tempered Monster",
+        "description": "Slay an Arch-Tempered Monster"
+    },
+    {
+        "title": "Capture Arch-Tempered Monster",
+        "description": "Capture an Arch-Tempered Monster"
+    },
+
+    {
+        "title": "Slay Frenzied Monster",
+        "description": "Slay a Frenzied Monster"
+    },
+    {
+        "title": "Capture Frenzied Monster",
+        "description": "Capture a Frenzied Monster"
+    },
+
+    {
+        "title": "Hunt 3-Star Threat Monster",
+        "description": "Hunt a Monster which has a 3-Star threat level."
+    },
+    {
+        "title": "Hunt 4-Star Threat Monster",
+        "description": "Hunt a Monster which has a 4-Star threat level."
+    },
+    {
+        "title": "Hunt 5-Star Threat Monster",
+        "description": "Hunt a Monster which has a 5-Star threat level."
+    },
+
+    {
+        "title": "Hunt 1-Star Monster",
+        "description": "Hunt a 1-Start Monster."
+    },
+    {
+        "title": "Hunt 8-Star Monster",
+        "description": "Hunt an 8-Start Monster."
+    },
+    {
+        "title": "Hunt 9-Star Monster",
+        "description": "Hunt a 9-Start Monster."
+    },
+
+    {
+        "title": "Complete Optional Objective",
+        "description": "Complete an Optional Objective."
+    },
+    {
+        "title": "Complete Investigation",
+        "description": "Complete an Investigation."
+    },
+
+    {
+        "title": "Tail Cutter",
+        "description": "Cut a Monsters Tail."
+    },
+
+    {
+        "title": "Obtain Rare Item",
+        "description": "Get a Gem/Plate drop."
+    }
+]

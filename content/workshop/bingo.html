@@ -1,0 +1,128 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Bingo</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/workshop.css">
+    <link rel="stylesheet" href="/css/workshop/bingo.css">
+  </head>
+<body>
+  <div class="app">
+    <header class="header-bingo">
+      <div class="header-bingo-left">
+        <a href="/workshop.html" class="back-btn">← Back</a>
+        <div>
+          <h1>Bingo</h1>
+          <p class="lead">Select a sheet and play!</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="panel">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div>
+            <label class="small">Topic</label>
+            <select id="topicSelect"></select>
+          </div>
+          
+          <div>
+            <label class="small">Sheet</label>
+            <select id="sheetSelect"></select>
+          </div>
+
+          <div class="controls">
+            <label class="small">Size</label>
+            <select id="sizeSelect">
+              <option value="5">5x5</option>
+              <option value="4">4x4</option>
+              <option value="3">3x3</option>
+            </select>
+            <button id="newBoardBtn">New board</button>
+            <button id="shuffleBtn">Shuffle</button>
+          </div>
+
+          <div>
+              <label class="small">Seed</label>
+              <input id="seedInput" type="number" placeholder="Custom Seed" style="flex:1" />
+              <button id="setSeedBtn">Set seed</button>
+          </div>
+
+          <div style="margin-top:4px">
+            <div id="catalogInfo" class="small">Loading catalog...</div>
+          </div>
+
+          <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:8px 0">
+
+          <div>
+            <label class="small">Display Options</label>
+            
+            <div class="toggle-group">
+              <div id="fillToggle" class="toggle">
+                <div class="toggle-slider"></div>
+              </div>
+              <span style="font-size:13px">Fill cells (vs circles)</span>
+            </div>
+
+            <div class="toggle-group">
+              <div id="freeSpaceToggle" class="toggle">
+                <div class="toggle-slider"></div>
+              </div>
+              <span style="font-size:13px">Free space in center</span>
+            </div>
+          </div>
+
+          <button id="resetMarks" style="margin-top:8px">Reset Board</button>
+        </div>
+      </aside>
+
+      <main>
+
+        
+        <div class="panel board-wrap">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <strong id="boardTitle">Board</strong>
+              <div class="small" id="boardSeed"></div>
+            </div>
+
+            <div style="display:flex;gap:8px;align-items:center">
+              <div id="timerDisplay" style="font-size:16px;font-weight:600;color:var(--accent);min-width:80px">00:00</div>
+              <button id="startPauseBtn">Start</button>
+            </div>
+          </div>
+
+          <div id="boardContainer" class="board" role="grid" aria-label="Bingo board"></div>
+
+          <footer>
+            Click cells to mark them. Get five in a row (horizontal, vertical, or diagonal) to win!
+          </footer>
+        </div>
+      </main>
+    </div>
+
+    <div id="banner" class="banner"></div>
+    
+    <div class="player-card">
+      <div style="font-weight:600;color:var(--muted)">Player</div>
+      <div class="player-info">
+        <div id="colorSwatch" class="color-swatch"></div>
+        <div class="player-name">Player 1</div>
+      </div>
+    </div>
+
+    <div id="colorPicker" class="color-picker-popup">
+      <div class="small" style="margin-bottom:8px;text-align:center">Choose your color</div>
+      <div class="color-grid" id="colorGrid"></div>
+    </div>
+  </div>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/workshop/bingo.js"></script>
+</body>
+</html>

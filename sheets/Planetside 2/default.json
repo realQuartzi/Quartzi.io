@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Capture a Base",
+    "description": "Successfully capture any facility or outpost."
+  },
+  {
+    "title": "Defend a Base",
+    "description": "Prevent the enemy from capturing a facility you own."
+  },
+  {
+    "title": "Spawn Beacon Deployed",
+    "description": "Deploy a spawn beacon for your squad."
+  },
+  {
+    "title": "Destroy a Vehicle",
+    "description": "Eliminate any enemy vehicle using C4, rockets, or weapon fire."
+  },
+  {
+    "title": "Repair Ally Vehicle",
+    "description": "Use your repair tool to fully repair an allied vehicle."
+  },
+  {
+    "title": "Revive a Teammate",
+    "description": "Bring a fallen ally back into battle with your medical applicator."
+  },
+  {
+    "title": "Kill Streak",
+    "description": "Achieve 5 kills without dying."
+  },
+  {
+    "title": "Vehicle Kill Streak",
+    "description": "Destroy 3 enemy vehicles without dying."
+  },
+  {
+    "title": "Air to Air Kill",
+    "description": "Shoot down an enemy aircraft while flying."
+  },
+  {
+    "title": "Headshot",
+    "description": "Score a headshot kill with any weapon."
+  },
+  {
+    "title": "Spot Enemy",
+    "description": "Spot an enemy soldier or vehicle for your squad."
+  },
+  {
+    "title": "Capture Point Hero",
+    "description": "Earn defense or capture points while staying on the point."
+  },
+  {
+    "title": "Squad Spawn",
+    "description": "A squad member spawns on your beacon, vehicle, or spawn point."
+  },
+  {
+    "title": "Destroy a Generator",
+    "description": "Overload and destroy a base generator."
+  },
+  {
+    "title": "Hack a Terminal",
+    "description": "Use the Infiltrator class to hack a terminal."
+  },
+  {
+    "title": "Use a MAX Suit",
+    "description": "Deploy as a MAX and score a kill."
+  },
+  {
+    "title": "Call for Ammo",
+    "description": "Request and receive ammo from an Engineer."
+  },
+  {
+    "title": "Squad Revive Chain",
+    "description": "Revive 3 teammates in quick succession."
+  },
+  {
+    "title": "Vehicle Roadkill",
+    "description": "Run over an enemy with a ground vehicle."
+  },
+  {
+    "title": "Sunderer Deployment",
+    "description": "Deploy a Sunderer that allies use as a spawn point."
+  },
+  {
+    "title": "Air Support Kill",
+    "description": "Get a kill with a Liberator or Valkyrie gun."
+  },
+  {
+    "title": "Tank Duel Winner",
+    "description": "Win a 1v1 tank fight."
+  },
+  {
+    "title": "Gunship Hunter",
+    "description": "Destroy a Liberator or Galaxy."
+  },
+  {
+    "title": "Assist Master",
+    "description": "Earn 10 assist points in one life."
+  },
+  {
+    "title": "Objective Push",
+    "description": "Join a successful push that flips a point under heavy fire."
+  }
+]

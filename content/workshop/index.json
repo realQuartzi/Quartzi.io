@@ -1,5 +1,13 @@
 [
     {
+        "file": "bingo.html",
+        "title": "Bingo",
+        "description": "Play custom bingo games with various topics. Create boards, track your progress, and compete with friends using seeded generations.",
+        "category": "Game",
+        "date": "2025",
+        "url": ""
+    },
+    {
         "file": "GithubSearcher.html",
         "title": "Github Repository Text Searcher",
         "description": "Easily find specific lines of code within a public github repository.",

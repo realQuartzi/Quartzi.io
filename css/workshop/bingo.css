@@ -1,0 +1,420 @@
+:root 
+{
+  --player-color: #10b981;
+}
+
+* 
+{
+  box-sizing: border-box;
+}
+
+html, body 
+{
+  height: 100%;
+}
+
+body 
+{
+  margin: 0;
+  font-family: Quicksand, Arial;
+  color: #e6eef3;
+  background: linear-gradient(180deg, #07080a 0%, #0b0d0f 100%);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.app 
+{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-bingo 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.header-bingo-left 
+{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+h1 
+{
+  font-size: 18px;
+  margin: 0;
+}
+
+.lead 
+{
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.panel 
+{
+  background: var(--card);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+  margin-bottom: 16px;
+}
+
+.controls 
+{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+select, input, button, textarea 
+{
+  background: var(--glass);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  color: inherit;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+button 
+{
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover 
+{
+  background: rgba(255, 255, 255, 0.06);
+  cursor: pointer;
+}
+
+button:disabled 
+{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.primary 
+{
+  background: var(--accent);
+  color: #07080a;
+  font-weight: 600;
+}
+
+button.primary:hover 
+{
+  background: #7ff0c4;
+}
+
+button.danger 
+{
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.2);
+}
+
+button.danger:hover 
+{
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.layout 
+{
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.small 
+{
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+/* Board styles */
+.board-wrap 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.board 
+{
+  display: grid;
+  border-radius: 10px;
+  overflow: visible;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.cell 
+{
+  position: relative;
+  padding: 12px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  border-right: 1px solid rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.cell:hover 
+{
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.cell.marked-fill 
+{
+  background: var(--player-color);
+  opacity: 0.8;
+}
+
+.cell.free-space 
+{
+  background: rgba(110, 231, 183, 0.1);
+  border: 2px solid var(--accent);
+}
+
+.cell.free-space .title 
+{
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.cell .title 
+{
+  pointer-events: none;
+}
+
+.tooltip 
+{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% + 8px);
+  min-width: 200px;
+  max-width: 280px;
+  background: #0b0d0f;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  color: var(--muted);
+  font-size: 12px;
+  z-index: 999;
+  display: none;
+  pointer-events: none;
+}
+
+.cell:hover .tooltip 
+{
+  display: block;
+}
+
+.dots 
+{
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  display: flex;
+  gap: 4px;
+}
+
+.dot 
+{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+/* Player card */
+.player-card 
+{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 18px;
+  background: var(--card);
+  padding: 12px 16px;
+  border-radius: 10px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  min-width: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.player-info 
+{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.color-swatch 
+{
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.color-swatch:hover 
+{
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.player-name 
+{
+  font-weight: 600;
+}
+
+/* Color picker */
+.color-picker-popup 
+{
+  position: fixed;
+  left: 50%;
+  bottom: 70px;
+  transform: translateX(-50%);
+  background: var(--card);
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: none;
+  z-index: 100;
+}
+
+.color-picker-popup.show 
+{
+  display: block;
+}
+
+.color-grid 
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.color-option 
+{
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.color-option:hover 
+{
+  transform: scale(1.1);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.color-option.selected 
+{
+  border-color: #fff;
+  transform: scale(1.15);
+}
+
+/* Banner */
+.banner 
+{
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #052018;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: var(--accent);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  z-index: 200;
+}
+
+/* Toggle switches */
+.toggle-group 
+{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.toggle 
+{
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.toggle.active 
+{
+  background: var(--accent);
+}
+
+.toggle-slider 
+{
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggle.active .toggle-slider 
+{
+  transform: translateX(20px);
+}
+
+footer 
+{
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 980px) 
+{
+  .layout 
+  {
+    grid-template-columns: 1fr;
+  }
+}

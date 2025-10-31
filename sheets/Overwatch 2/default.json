@@ -1,0 +1,149 @@
+[
+    {
+        "title":"First Kill",
+        "description":"Be the first player on your team to get a kill."
+    },
+    {
+        "title":"Double Kill",
+        "description":"Eliminate 2 players within 5 seconds."
+    },
+    {
+        "title":"Team Kill",
+        "description":"Get a team kill."
+    },
+    {
+        "title":"Ace Kill",
+        "description":"Eliminate the last player required to get a Team kill."
+    },
+    {
+        "title":"Headshot Kill",
+        "description":"Eliminate a player with a headshot."
+    },
+    {
+        "title":"Melee Kill",
+        "description":"Eliminate a player with a melee hit."
+    },
+    {
+        "title":"Environmental Kill",
+        "description":"Knock an enemy off the map or into environmental hazards."
+    },
+    {
+        "title":"Ultimate Kill",
+        "description":"Eliminate a player with your Ultimate."
+    },
+    {
+        "title":"Damage Boost Kill",
+        "description":"Eliminate a player while under a damage boost."
+    },
+    {
+        "title":"Objective Kill",
+        "description":"Eliminate a player while on the objective."
+    },
+
+    {
+        "title":"Capture Objective",
+        "description":"Capture an objective. (You must be on it when captured)"
+    },
+    {
+        "title":"Objective Time",
+        "description":"Spend at least 20 seconds on the objective at once."
+    },
+    {
+        "title":"Contest Objective",
+        "description":"Contest the objective for at least 20 seconds at once."
+    },
+
+    {
+        "title":"Ultimate Denial",
+        "description":"Stop/Cancel a hostile players ultimate."
+    },
+
+    {
+        "title":"20 Elimiations",
+        "description":"Get 20 Eliminations in a single match."
+    },
+    {
+        "title":"20 Assists",
+        "description":"Get 20 Assists in a single match."
+    },
+    {
+        "title":"10 Kill-Streak",
+        "description":"Get 10 Eliminations without dying in a single match."
+    },
+    {
+        "title":"8k Damage",
+        "description":"Deal 8000 damage in a single match."
+    },
+    {
+        "title":"8k Heal",
+        "description":"Deal 8000 heal in a single match."
+    },
+    {
+        "title":"8k Mitigation",
+        "description":"Mitigate 8000 damage in a single match."
+    },
+
+    {
+        "title":"Victory",
+        "description":"Win a match."
+    },
+    {
+        "title":"Win Streak",
+        "description":"Win 3 games in a row."
+    },
+    {
+        "title":"Lose Streak",
+        "description":"Lose 3 games in a row. (f)"
+    },
+    {
+        "title":"Quickplay Victory",
+        "description":"Win a game of Quick Play."
+    },
+    {
+        "title":"6v6 Victory",
+        "description":"Win a game of 6v6."
+    },
+    {
+        "title":"Mystery Victory",
+        "description":"Win a game of Mystery Heroes."
+    },
+    {
+        "title":"Stadium Victory",
+        "description":"Win a game of Stadium."
+    },
+    {
+        "title":"No Limits Victory",
+        "description":"Win a game of No Limits."
+    },
+    {
+        "title":"Deathmatch Victory",
+        "description":"Win a game of Deathmatch."
+    },
+    {
+        "title":"Competative Victory",
+        "description":"Win a game of Competative Overwatch."
+    },
+
+    {
+        "title":"Tank Win",
+        "description":"Win a match as the Tank Role."
+    },
+    {
+        "title":"Damage Win",
+        "description":"Win a match as the Damage Role."
+    },
+    {
+        "title":"Support Win",
+        "description":"Win a match as the Support Role."
+    },
+
+    {
+        "title":"Early Leaver",
+        "description":"Have a teammate or enemy leave before the game ends."
+    },
+
+    {
+        "title":"Targeted",
+        "description":"Get solo ulted. (f)"
+    }
+]

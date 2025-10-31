@@ -1,0 +1,123 @@
+[
+  {
+    "title": "Capture Base",
+    "description": "Successfully capture any facility or outpost."
+  },
+  {
+    "title": "Defend Base",
+    "description": "Prevent the enemy from capturing a facility you own."
+  },
+
+  {
+    "title": "Destroy Vehicle",
+    "description": "Destroy any enemy vehicle."
+  },
+  {
+    "title": "Flash Rider",
+    "description": "Eliminate an enemy on a Flash/Javelin."
+  },
+
+  {
+    "title": "Revive Teammate",
+    "description": "Revive a Teammate using your medical applicator."
+  },
+  {
+    "title": "Necromancer",
+    "description": "Revive 3 teammates using a single Revive Grenade."
+  },
+
+  {
+    "title": "Healing Ribbon",
+    "description": "Obtain a Healing Ribbon"
+  },
+  {
+    "title": "Revive Ribbon",
+    "description": "Obtain a Revive Ribbon"
+  },
+  {
+    "title": "Shielding Ribbon",
+    "description": "Obtain a Shielding Ribbon"
+  },
+
+  {
+    "title": "Kill Streak",
+    "description": "Achieve 5 kills without dying."
+  },
+  {
+    "title": "Headshot Kill",
+    "description": "Eliminate an enemy with a Headshot."
+  },
+  {
+    "title": "Melee Kill",
+    "description": "Eliminate an enemy with a Knife."
+  },
+  {
+    "title": "Grenade Kill",
+    "description": "Eliminate an enemy with a Grenade detonation."
+  },
+  {
+    "title": "Side-Arm Kill",
+    "description": "Eliminate an enemy using a Side-Arm / Pistol."
+  },
+  {
+    "title": "Kill Through Smoke",
+    "description": "Eliminate an enemy while visibility is obscured by smoke."
+  },
+
+  {
+    "title": "Kill a Light Assault",
+    "description": "Eliminate an enemy Light Assault."
+  },
+  {
+    "title": "Kill a Heavy",
+    "description": "Eliminate an enemy Heavy Assault."
+  },
+  {
+    "title": "Kill a Medic",
+    "description": "Eliminate an enemy Combat Medic."
+  },
+  {
+    "title": "Kill an Engineer",
+    "description": "Eliminate an enemy Engineer."
+  },
+  {
+    "title": "Kill an Infiltrator",
+    "description": "Eliminate an enemy Infiltrator."
+  },
+  {
+    "title": "Kill a Max",
+    "description": "Destroy an enemy MAX unit."
+  },
+  {
+    "title": "Kill a Cloaker",
+    "description": "Eliminate a cloaked enemy."
+  },
+
+  {
+    "title": "Trade",
+    "description": "Trade kills with an enemy. (Die at the same time)"
+  },
+
+  {
+    "title": "Kill Bounty",
+    "description": "Eliminate an enemy marked with a bounty."
+  },
+  {
+    "title": "Become Bounty",
+    "description": "Earn a bounty on yourself."
+  },
+
+  {
+    "title": "One Life",
+    "description": "Win a fight with 50 hp remaining."
+  },
+
+  {
+    "title": "Destroy Spawn Beacon",
+    "description": "Destroy an enemy spawn beacon."
+  },
+  {
+    "title": "Destroy Turret",
+    "description": "Destroy an enemy Turret."
+  }
+]
