@@ -7,18 +7,20 @@ body
     margin: 0;
 }
 
+/* Input Groups */
 .input-group 
 {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
     text-align: left;
 }
 
 label 
 {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
     color: var(--text-light);
+    font-size: 0.95rem;
 }
 
 .dark-mode label 
@@ -26,115 +28,238 @@ label
     color: var(--text-dark);
 }
 
+/* Form Inputs */
 input, select 
 {
     font-family: 'Quicksand', sans-serif;
     width: 100%;
-    padding: 8px;
-    border: 1px solid var(--bg-dark);
-    border-radius: 4px;
+    padding: 12px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
     box-sizing: border-box;
-    margin-bottom: 4px;
-}
-
-.dark-mode input, select 
-{
-    border: 1px solid var(--bg-light);
-}
-
-.content button 
-{
-    font-family: 'Quicksand', sans-serif;
-    background-color: #45e04a;
+    margin-bottom: 0.5rem;
+    background: var(--card-light);
     color: var(--text-light);
-    border: none;
-    padding: 12px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-    margin-bottom: 20px;
-    transition: background-color 0.3s;
+    font-size: 0.95rem;
+    transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
-.dark-mode .content button 
+.dark-mode input, 
+.dark-mode select 
 {
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: var(--glass);
     color: var(--text-dark);
 }
 
-.content button:hover 
+input:focus, 
+select:focus 
 {
-    background-color: #23b42b;
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(110, 231, 183, 0.1);
 }
 
-.output 
+input::placeholder 
 {
-    background-color: var(--bg-light);
-    border-radius: 4px;
-    padding: 15px;
-    margin-bottom: 15px;
-    text-align: center;
+    color: var(--muted);
+    opacity: 0.8;
 }
 
-.dark-mode .output 
-{
-    background-color: var(--bg-dark);
-}
-
-.output-label 
-{
-    font-weight: bold;
-    color: var(--text-light);
-    margin-bottom: 5px;
-}
-
-.dark-mode .output-label 
-{
-    color: var(--text-dark);
-}
-
-.result 
-{
-    font-size: 18px;
-    color: var(--text-light);
-}
-
-.dark-mode .result 
-{
-    font-size: 18px;
-    color: var(--text-dark);
-}
-
+/* Textarea */
 textarea
 {
-
     font-family: 'Quicksand', sans-serif;
     width: 100%;
-    height: 72px;
+    min-height: 80px;
     color: var(--text-light);
-    border: 1px solid var(--bg-dark);
-    background-color: var(--card-light);
-    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: var(--card-light);
+    border-radius: 8px;
     box-sizing: border-box;
-    padding-left: 6px;
-    margin-bottom: 4px;
+    padding: 12px 16px;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    resize: vertical;
+    transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
 .dark-mode textarea
 {
     color: var(--text-dark);
-    border: 1px solid var(--bg-light);
-    background-color: var(--card-dark);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: var(--glass);
+}
+
+textarea:focus 
+{
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(110, 231, 183, 0.1);
 }
 
 textarea::placeholder
 {
-    color: var(--text-light);
+    color: var(--muted);
     opacity: 0.8;
 }
 
 .dark-mode textarea::placeholder
 {
+    color: var(--muted);
+}
+
+/* Buttons */
+.content button 
+{
+    font-family: 'Quicksand', sans-serif;
+    background: var(--accent);
+    color: #07080a;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 12px rgba(110, 231, 183, 0.2);
+}
+
+.content button:hover 
+{
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(110, 231, 183, 0.3);
+}
+
+.content button:active 
+{
+    transform: translateY(0);
+}
+
+.content button:disabled 
+{
+    background: var(--muted);
+    cursor: not-allowed;
+    opacity: 0.5;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Output Display */
+.output 
+{
+    background: var(--glass-light);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.dark-mode .output 
+{
+    background: var(--glass);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.output-label 
+{
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.result 
+{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-light);
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.dark-mode .result 
+{
     color: var(--text-dark);
-    opacity: 0.8;
+}
+
+/* Workshop Grid Layout (if needed) */
+.workshop-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.workshop-card 
+{
+    background: var(--card-light);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.dark-mode .workshop-card 
+{
+    background: var(--card-dark);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.workshop-card:hover 
+{
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 12px 32px rgba(110, 231, 183, 0.15);
+}
+
+/* Form sections */
+.form-section 
+{
+    background: var(--card-light);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.dark-mode .form-section 
+{
+    background: var(--card-dark);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.form-section h3 
+{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: 'Fredoka One';
+    font-weight: 100;
+    color: inherit;
+}
+
+/* Responsive */
+@media (max-width: 768px) 
+{
+    .workshop-grid 
+    {
+        grid-template-columns: 1fr;
+    }
+    
+    .content button 
+    {
+        padding: 12px 20px;
+    }
 }

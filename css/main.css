@@ -1,18 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 :root 
 {
-    --bg-light: #e1e6eb;
-    --bg-dark: #0a0b12;
-    --text-light: #101322;
-    --text-dark: #e1e6eb;
-    --card-light: #f4f5f7;
-    --card-dark: #101322;
-
-    --accept-button: #34bb39;
-    --accept-button-hover: #1a8720;
-
-    --decline-button: #223;
-    --decline-button-hover: #112;
-
+    /* Dark theme (primary) */
+    --bg-dark: #07080a;
+    --card-dark: #0f1113;
+    --text-dark: #e6eef3;
+    
+    /* Light theme */
+    --bg-light: #f5f7fa;
+    --card-light: #ffffff;
+    --text-light: #1a1d21;
+    
+    /* Shared colors */
+    --muted: #8b9399;
+    --accent: #6ee7b7;
+    --accent-hover: #7ff0c4;
+    --accent-secondary: #3b82f6;
+    --glass: rgba(255, 255, 255, 0.03);
+    --glass-light: rgba(0, 0, 0, 0.02);
+    
+    /* Buttons */
+    --accept-button: #10b981;
+    --accept-button-hover: #059669;
+    --decline-button: #334155;
+    --decline-button-hover: #1e293b;
+    
     --text-link: #3b82f6;
 }
 
@@ -21,14 +34,16 @@ body
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
-    background-color: var(--bg-light);
+    font-weight: 500;
+    background: linear-gradient(180deg, var(--bg-light) 0%, #e8ecf0 100%);
     color: var(--text-light);
-    transition: background-color 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s;
+    min-height: 100vh;
 }
 
 body.dark-mode 
 {
-    background-color: var(--bg-dark);
+    background: linear-gradient(180deg, var(--bg-dark) 0%, #0b0d0f 100%);
     color: var(--text-dark);
 }
 
@@ -43,43 +58,63 @@ body.dark-mode
 .welcome-section 
 {
     text-align: center;
-    margin-bottom: 3rem;
+    padding: 2rem 1rem;
 }
 
 h1, h2 
 {
     font-family: 'Fredoka One';
-    font-weight: 100;
+    font-weight: 400;
     margin-bottom: 1rem;
 }
 
-/* Cookie */
+h1 
+{
+    font-size: 3rem;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 0.75rem 0;
+}
+
+.welcome-section p 
+{
+    color: var(--muted);
+    font-size: 1.1rem;
+}
+
+/* Cookie Banner */
 .cookie-banner 
 {
     position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--card-dark);
+    background: var(--card-dark);
     color: var(--text-dark);
-    padding: 15px 20px;
+    padding: 20px 24px;
     text-align: center;
     z-index: 1000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
     max-width: 400px;
     width: 90%;
 }
 
 .dark-mode .cookie-banner 
 {
-    background-color: var(--card-light);
+    background: var(--card-light);
     color: var(--text-light);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .cookie-banner p 
 {
-    margin: 0 0 15px 0;
+    margin: 0 0 16px 0;
+    font-size: 14px;
 }
 
 .cookie-actions 
@@ -92,57 +127,72 @@ h1, h2
 .cookie-btn 
 {
     font-family: 'Quicksand', sans-serif;
-    background-color: var(--accept-button);
+    background: var(--accept-button);
     color: white;
     border: none;
-    padding: 8px 15px;
-    border-radius: 4px;
+    padding: 10px 20px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.2s;
 }
 
 .cookie-btn:hover
 {
-    background-color: var(--accept-button-hover);
+    background: var(--accept-button-hover);
+    transform: translateY(-2px);
 }
 
 .cookie-btn.secondary 
 {
-    background-color: var(--decline-button);
+    background: var(--decline-button);
 }
 
 .cookie-btn.secondary:hover
 {
-    background-color: var(--decline-button-hover);
+    background: var(--decline-button-hover);
 }
 
 .close-btn 
 {
     font-family: 'Quicksand', sans-serif;
+    font-weight: 1000;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 12px;
+    right: 12px;
     background: none;
     border: none;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
-    color: var(--card-light);
+    color: var(--muted);
     padding: 0;
     width: auto;
     margin: 0;
-}
-
-.dark-mode .close-btn 
-{
-    color: var(--card-dark);
+    transition: color 0.2s, transform 0.2s;
 }
 
 .close-btn:hover 
 {
-    color: var(--bg-light);
+    color: var(--text-dark);
+    transform: scale(1.1);
 }
 
 .dark-mode .close-btn:hover 
 {
-    color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) 
+{
+    h1 
+    {
+        font-size: 2rem;
+    }
+    
+    .main-content 
+    {
+        margin: 4rem auto 2rem;
+    }
 }
