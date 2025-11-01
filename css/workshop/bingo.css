@@ -367,8 +367,7 @@ select:hover
 /* Banner */
 .banner 
 {
-  position: fixed;
-  top: 0px;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   background: #052018;
@@ -378,8 +377,8 @@ select:hover
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
   font-weight: 600;
   font-size: 14px;
-  display: block;
-  z-index: 200;
+  display: none;
+  z-index: 100;
 }
 
 /* Toggle switches */
