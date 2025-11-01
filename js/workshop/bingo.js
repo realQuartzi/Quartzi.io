@@ -236,14 +236,16 @@ function UpdateSheets()
 async function LoadSelectedSheet() 
 {
   const topic = topicSelect.value;
-  const sheet = sheetSelect.value;
+  const sheet = sheetSelect.value.toLowerCase();
+
   try 
   {
     const path = `/sheets/${encodeURIComponent(topic)}/${encodeURIComponent(sheet)}.json`;
+    console.log("Fetching:", path);
 
     const res = await fetch(path, {cache: 'no-store'});
     if (!res.ok) 
-      throw new Error('sheet not found');
+      throw new Error(`Sheet not found: ${path}`);
 
     state.sheetData = await res.json();
     catalogInfo.textContent = `Loaded ${state.sheetData.length} entries from ${topic}/${sheet}`;
