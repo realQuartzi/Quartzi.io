@@ -359,10 +359,16 @@ function RenderBoard()
 
 function OnCellClick(idx)
 {
-  if (!state.isActive) 
+  if(state.hasWon && !state.isActive)
   {
-    alert('Press Start to begin playing!');
+    alert('Press Start to continue playing!');
     return;
+  }
+
+  if(!state.isActive)
+  {
+    state.isActive = true;
+    StartTimer();
   }
 
   state.marks[idx] = !state.marks[idx];
