@@ -1,0 +1,113 @@
+[
+    {
+        "title":"Naptime",
+        "description":"Interrupt an enemy Ultimate Ability with a Sleep Dart. (Ana)"
+    },
+    {
+        "title":"Sleeping Angel",
+        "description":"Get an Environmental Elimination with Sleep Dart. (Ana)"
+    },
+    {
+        "title":"Biotic Boom",
+        "description":"Hit 3 enemies at once with a single Biotic Grenade. (Ana)"
+    },
+
+    {
+        "title":"Stand By Me",
+        "description":"Prevent a death using an Immortality Field without dying yourself. (Baptiste)"
+    },
+    {
+        "title":"Amplified Support",
+        "description":"Get an Elimination/Assist through your Amplification Matrix. (Baptiste)"
+    },
+
+    {
+        "title":"Excuse Me",
+        "description":"Get a killing blow with Shield Bash. (Brigitte)"
+    },
+    {
+        "title":"Grounded",
+        "description":"Kill an airborne enemy with Whip Shot. (Brigitte)"
+    },
+    {
+        "title":"Let's Get Whippy",
+        "description":"Get an Environmental Elimination with Whip Shot. (Brigitte)"
+    },
+
+    {
+        "title":"Solar Flare",
+        "description":"Detonate a Sunstruck enemy after using Captive Sun. (Illari)"
+    },
+
+    {
+        "title":"Pulsars Inbound",
+        "description":"Hit 6 targets with a single use of Pulsar Torpedoes. (Juno)"
+    },
+    {
+        "title":"Terrible Torpedo",
+        "description":"Eliminate an enemy using Pulsar Torpedoes. (Juno)"
+    },
+
+    {
+        "title":"Purified",
+        "description":"Cleanse 2 negative effects with one use of Protection Suzu. (Kiriko)"
+    },
+    {
+        "title":"Zu-Zu",
+        "description":"Prevent a death using Protection Suzu without dying yourself. (Kiriko)"
+    },
+    {
+        "title":"Kunai Expert",
+        "description":"Deliver 3 headshots in a row by throwing Kunai. (Kiriko)"
+    },
+
+    {
+        "title":"Life Weaving",
+        "description":"Prevent a death with Life Grip without dying yourself. (Lifeweaver)"
+    },
+
+    {
+        "title":"Boop!",
+        "description":"Get a killing blow with Soundwave. (Lucio)"
+    },
+    {
+        "title":"Push Off",
+        "description":"Get an Environmental Elimination with Soundwave. (Lucio)"
+    },
+
+    {
+        "title":"Valkyrie",
+        "description":"Get an Elimination while in Valkyrie. (Mercy)"
+    },
+    {
+        "title":"Angel on your Shoulder",
+        "description":"Resurrect 3 teammates without dying. (Mercy)"
+    },
+
+    {
+        "title":"Deconstruction",
+        "description":"Get a killing blow with a Biotic Orb. (Moira)"
+    },
+    {
+        "title":"Destruction Beam",
+        "description":"Eliminate an enemy with Coalescence. (Moira)"
+    },
+
+    {
+        "title":"Reverse the Tide",
+        "description":"Eliminate an enemy with Tidal Blast. (Wuyang)"
+    },
+    {
+        "title":"Get Washed",
+        "description":"Eliminate an enemy with Guardian Wave. (Wuyang)"
+    },
+
+    {
+        "title":"Kicker",
+        "description":"Get an Environmental Elimination with Snap Kick. (Zenyatta)"
+    },
+    {
+        "title":"Transcend",
+        "description":"Prevent your death using Transendence. (Zenyatta)"
+    }
+]
